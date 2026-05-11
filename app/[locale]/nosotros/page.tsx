@@ -52,10 +52,10 @@ export default async function NosotrosPage({ params }: { params: Promise<{ local
           ].map((it) => (
             <li key={it.key} className={`rounded-3xl p-8 border border-surface-line transition-transform hover:-translate-y-1 ${it.bg}`}>
               <p className={`font-display text-4xl md:text-5xl font-extrabold ${it.text}`}>
-                {t(`stats.items.${it.key}.n` as any)}
+                {t(`stats.items.${it.key}.n`)}
               </p>
               <p className="mt-4 text-ink-soft text-lg font-medium">
-                {t(`stats.items.${it.key}.l` as any)}
+                {t(`stats.items.${it.key}.l`)}
               </p>
             </li>
           ))}
@@ -148,8 +148,8 @@ export default async function NosotrosPage({ params }: { params: Promise<{ local
               <div className={`mb-4 w-12 h-12 rounded-full bg-surface-tint flex items-center justify-center ${v.color}`}>
                 {v.icon}
               </div>
-              <h3 className="font-display text-xl font-bold text-ink">{t(`valores.items.${v.key}.name` as any)}</h3>
-              <p className="mt-2 text-ink-soft">{t(`valores.items.${v.key}.desc` as any)}</p>
+              <h3 className="font-display text-xl font-bold text-ink">{t(`valores.items.${v.key}.name`)}</h3>
+              <p className="mt-2 text-ink-soft">{t(`valores.items.${v.key}.desc`)}</p>
             </li>
           ))}
         </ul>

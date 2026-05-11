@@ -3,9 +3,10 @@
 import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { ShieldCheck, ChevronLeft, ChevronRight, Landmark, Award, FileCheck, Star } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils/cn";
 
-const badgeIcons = [FileCheck, Landmark, Landmark, Landmark, Star, Award];
+const badgeIcons: LucideIcon[] = [FileCheck, Landmark, Landmark, Landmark, Star, Award];
 
 export function TrustBar() {
   const t = useTranslations("home.trust");
@@ -69,7 +70,7 @@ export function TrustBar() {
                 style={{ transform: `translateX(-${current * 100}%)` }}
               >
                 {badges.map((badge, i) => {
-                  const Icon = badgeIcons[i % badgeIcons.length];
+                  const Icon = badgeIcons[i % badgeIcons.length] as React.ElementType;
                   return (
                     <div key={i} className="w-full flex-shrink-0 flex flex-col items-center px-4">
                       <div className="flex h-20 w-20 items-center justify-center rounded-2xl bg-surface-tint border border-surface-line text-brand-teal mb-6 shadow-sm">

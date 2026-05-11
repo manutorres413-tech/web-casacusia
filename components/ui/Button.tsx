@@ -52,9 +52,12 @@ export const Button = forwardRef<HTMLButtonElement | HTMLAnchorElement, ButtonPr
       }
 
       return (
-        <Link ref={ref as React.Ref<HTMLAnchorElement>} href={rest.href} className={classes} {...(rest as any)}>
-          {children}
-        </Link>
+        <>
+          {/* @ts-expect-error next-intl Link props mismatch */}
+          <Link ref={ref as React.Ref<HTMLAnchorElement>} href={rest.href} className={classes} {...rest}>
+            {children}
+          </Link>
+        </>
       );
     }
 

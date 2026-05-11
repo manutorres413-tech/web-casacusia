@@ -41,7 +41,7 @@ export function PageHero({
         <>
           <div className="absolute inset-0 z-0">
             <Image
-              src={backgroundImage}
+              src={backgroundImage!}
               alt=""
               fill
               className="object-cover"

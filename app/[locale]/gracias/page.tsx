@@ -50,7 +50,7 @@ export default async function GraciasPage({ params }: { params: Promise<{ locale
         </div>
 
         <p className="mt-12 text-sm text-ink-muted italic">
-          "La hipoacusia no se transita en soledad."
+          &quot;La hipoacusia no se transita en soledad.&quot;
         </p>
       </div>
     </div>

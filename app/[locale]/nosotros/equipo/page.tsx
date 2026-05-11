@@ -73,7 +73,7 @@ export default async function EquipoPage({ params }: { params: Promise<{ locale:
                 {m.rol}
               </p>
               <p className="mt-3 text-ink-soft leading-relaxed flex-1 text-sm">
-                {m.bio}
+                {m.bioCorta}
               </p>
               {m.quotePersonal && (
                 <blockquote className="mt-4 pl-4 border-l-2 border-brand-teal italic text-ink-soft text-sm">
