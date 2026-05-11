@@ -1,0 +1,72 @@
+import { useTranslations } from "next-intl";
+import { Button } from "@/components/ui/Button";
+import { Filamento } from "@/components/ui/Filamento";
+import Image from "next/image";
+
+export function Esencia() {
+  const t = useTranslations("home.esencia");
+
+  return (
+    <section
+      className="relative overflow-hidden bg-ink py-24 md:py-32"
+      aria-labelledby="esencia-title"
+    >
+      {/* Filamentos sutiles de fondo */}
+      <Filamento name="verde"   className="-top-20 -right-16 w-80 rotate-[-25deg]" opacity={15} />
+      <Filamento name="morado"  className="-bottom-20 -left-16 w-64 rotate-[20deg]" opacity={15} />
+
+      <div className="container relative mx-auto px-4 max-w-7xl">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Columna Izquierda: Texto */}
+          <div className="max-w-xl z-10">
+            <p className="font-display text-xs md:text-sm font-bold uppercase tracking-[0.2em] text-verde mb-4">
+              {t("eyebrow")}
+            </p>
+
+            <h2
+              id="esencia-title"
+              className="font-bubbles text-6xl md:text-7xl lg:text-[5.5rem] font-bold leading-[1.1] text-white drop-shadow-sm"
+            >
+              {t("title")}
+            </h2>
+
+            <p className="mt-8 text-lg leading-relaxed text-white/80 md:text-xl font-medium">
+              {t("body")}
+            </p>
+
+            <div className="mt-10">
+              <Button
+                href="/nosotros/equipo"
+                variant="secondary"
+                size="lg"
+                className="border-white/20 bg-white/10 text-white backdrop-blur-md hover:bg-white hover:text-ink transition-all duration-300"
+              >
+                {t("cta")}
+              </Button>
+            </div>
+          </div>
+
+          {/* Columna Derecha: Imagen */}
+          <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] mt-10 lg:mt-0">
+            {/* Elemento decorativo de fondo */}
+            <div className="absolute inset-0 bg-gradient-to-tr from-brand-teal/20 to-verde/20 rounded-[2rem] transform translate-x-4 translate-y-4 -rotate-3" />
+            
+            {/* Contenedor principal de la imagen */}
+            <div className="relative w-full h-full rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl">
+              <Image
+                src="/fotos/propuestas/Casacusia_GZ-21.jpg"
+                alt="Comunidad Casacusia"
+                fill
+                className="object-cover object-center"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+                quality={85}
+              />
+              {/* Overlay suave para mantener el mood dark */}
+              <div className="absolute inset-0 bg-ink/20 mix-blend-multiply" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

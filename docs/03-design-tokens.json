@@ -1,0 +1,143 @@
+{
+  "$meta": {
+    "nota": "Tokens placeholder derivados del brief HTML. Reemplazar con los oficiales del Manual de Identidad Gráfica CASACUSIA (bit.ly/IdentidadGraficaCASACUSIA) cuando esté disponible.",
+    "version": "0.1-placeholder"
+  },
+  "color": {
+    "brand": {
+      "teal":       { "value": "#0E6E6A", "description": "Color principal CASACUSIA" },
+      "tealDark":   { "value": "#0A5551" },
+      "tealSoft":   { "value": "#E3F1EF", "description": "Fondos sutiles con color de marca" },
+      "warm":       { "value": "#D96A3B", "description": "Naranja cálido para CTAs secundarios" },
+      "warmSoft":   { "value": "#FCE7DC" }
+    },
+    "ink": {
+      "primary":   { "value": "#1A2A33", "description": "Texto principal" },
+      "soft":      { "value": "#3A4C55" },
+      "muted":     { "value": "#6B7A82" }
+    },
+    "surface": {
+      "bg":        { "value": "#FAF6F0", "description": "Fondo cálido base" },
+      "card":      { "value": "#FFFFFF" },
+      "line":      { "value": "#E3DED4" },
+      "tint":      { "value": "#F3EEE5" }
+    },
+    "feedback": {
+      "ok":        { "value": "#2E7D4F" },
+      "warn":      { "value": "#C0392B" },
+      "mid":       { "value": "#B8860B" },
+      "info":      { "value": "#0E6E6A" }
+    },
+    "contraste": {
+      "nota": "Todos los pares texto/fondo verificados AA WCAG 2.2",
+      "tealSobreBg":  "4.72:1 AA",
+      "inkSobreBg":   "13.1:1 AAA",
+      "inkSoftSobreBg": "8.4:1 AAA"
+    }
+  },
+  "typography": {
+    "fontFamily": {
+      "sans": { "value": "Inter, system-ui, -apple-system, 'Segoe UI', sans-serif", "description": "Placeholder hasta definir fuente oficial" },
+      "display": { "value": "'Inter Display', Inter, system-ui, sans-serif" },
+      "mono": { "value": "ui-monospace, Menlo, Consolas, monospace" }
+    },
+    "fontSize": {
+      "xs":   "0.75rem",
+      "sm":   "0.875rem",
+      "base": "1rem",
+      "lg":   "1.125rem",
+      "xl":   "1.25rem",
+      "2xl":  "1.5rem",
+      "3xl":  "1.875rem",
+      "4xl":  "2.25rem",
+      "5xl":  "3rem",
+      "6xl":  "3.75rem",
+      "display": "clamp(2.5rem, 5vw + 1rem, 4.5rem)"
+    },
+    "fontWeight": {
+      "regular": 400,
+      "medium":  500,
+      "semibold": 600,
+      "bold":    700,
+      "extrabold": 800
+    },
+    "lineHeight": {
+      "tight":  1.15,
+      "snug":   1.3,
+      "normal": 1.55,
+      "relaxed": 1.7
+    },
+    "letterSpacing": {
+      "tight":  "-0.02em",
+      "normal": "0",
+      "wide":   "0.08em",
+      "extraWide": "0.2em"
+    }
+  },
+  "radius": {
+    "sm":   "0.375rem",
+    "md":   "0.625rem",
+    "lg":   "0.875rem",
+    "xl":   "1.25rem",
+    "2xl":  "1.75rem",
+    "full": "9999px"
+  },
+  "spacing": {
+    "0":  "0",
+    "1":  "0.25rem",
+    "2":  "0.5rem",
+    "3":  "0.75rem",
+    "4":  "1rem",
+    "5":  "1.25rem",
+    "6":  "1.5rem",
+    "8":  "2rem",
+    "10": "2.5rem",
+    "12": "3rem",
+    "16": "4rem",
+    "20": "5rem",
+    "24": "6rem",
+    "32": "8rem"
+  },
+  "shadow": {
+    "xs": "0 1px 2px rgba(26,42,51,0.04)",
+    "sm": "0 2px 4px rgba(26,42,51,0.06)",
+    "md": "0 6px 14px rgba(26,42,51,0.08)",
+    "lg": "0 16px 30px rgba(26,42,51,0.10)",
+    "focus": "0 0 0 3px rgba(14,110,106,0.35)"
+  },
+  "motion": {
+    "duration": {
+      "fast":   "120ms",
+      "normal": "200ms",
+      "slow":   "360ms"
+    },
+    "easing": {
+      "standard": "cubic-bezier(0.2, 0, 0, 1)",
+      "out":      "cubic-bezier(0, 0, 0.2, 1)",
+      "in":       "cubic-bezier(0.4, 0, 1, 1)"
+    },
+    "prefersReducedMotion": "Todas las animaciones respetan @media (prefers-reduced-motion: reduce)"
+  },
+  "breakpoints": {
+    "sm":  "640px",
+    "md":  "768px",
+    "lg":  "1024px",
+    "xl":  "1280px",
+    "2xl": "1536px"
+  },
+  "container": {
+    "maxWidth": "1200px",
+    "paddingX": { "base": "1rem", "md": "2rem", "lg": "3rem" }
+  },
+  "a11y": {
+    "focusRing": {
+      "outline": "3px solid var(--color-brand-teal)",
+      "outlineOffset": "2px",
+      "borderRadius": "calc(var(--radius-md) + 2px)"
+    },
+    "minTapTarget": "44px",
+    "minContrastBody": "4.5:1",
+    "minContrastLargeText": "3:1",
+    "minContrastNonTextUI": "3:1"
+  }
+}

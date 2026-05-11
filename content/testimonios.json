@@ -1,0 +1,30 @@
+[
+  {
+    "id": "t-perla",
+    "texto": "Encontramos tu podcast y lo escuchamos de camino al colegio, y hemos podido hablar acerca de las cosas que le pasan son las mismas que a ti (y muchos más). Gracias por abrir esta ventana.",
+    "autor": "Perla",
+    "ubicacion": "Chile",
+    "contexto": "Mamá de Emilio, adolescente con hipoacusia bilateral",
+    "destacado": true
+  },
+  {
+    "id": "t-silvia",
+    "texto": "La profe habló 100% del taller mirándome para que la pueda entender bien. Esa fuerza la tomé de acá. Es la primera vez que lo hago público así, entre personas que no conozco.",
+    "autor": "Silvia",
+    "destacado": true
+  },
+  {
+    "id": "t-anon",
+    "texto": "El episodio sobre la culpa me ayudó a mirar las cosas desde una perspectiva más linda. No es algo malo tener hipoacusia bilateral, es algo que me tocó en la vida y mi trabajo es saber convivir con ello.",
+    "autor": "Anónimo",
+    "destacado": true
+  },
+  {
+    "id": "t-madre",
+    "texto": "Cuando diagnosticaron a mi hija, no sabía dónde mirar. Encontrar CASACUSIA cambió todo: dejamos de estar solas.",
+    "autor": "Laura",
+    "ubicacion": "Mendoza",
+    "contexto": "Mamá de una niña con hipoacusia unilateral",
+    "destacado": false
+  }
+]

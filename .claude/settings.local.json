@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(/c/Users/Julian/AppData/Roaming/npm/npm.cmd run *)",
+      "Bash(cmd.exe /c \"npx tsc --noEmit 2>&1\")",
+      "Bash(cmd //c \"node_modules/.bin/tsc --noEmit 2>&1\")",
+      "Bash(cmd.exe /c \"node_modules\\\\.bin\\\\tsc --noEmit 2>&1\")",
+      "Bash(cmd //c \"node_modules\\\\.bin\\\\tsc --noEmit 2>&1\")",
+      "Bash(cmd.exe /c \"node_modules\\\\.bin\\\\tsc.cmd --noEmit 2>&1\")",
+      "Bash(cmd.exe /c \"npm run dev\")",
+      "Bash(cmd.exe /c \"cd /d C:\\\\Users\\\\Julian\\\\Desktop\\\\code\\\\web-casacusia && npm run dev\")",
+      "Bash(cmd.exe /c \"where npm 2>&1\")",
+      "Bash(cmd.exe /c \"where node 2>&1 & where npm 2>&1 & echo PATH=%PATH%\")",
+      "Bash(powershell.exe -Command \"cd 'C:\\\\Users\\\\Julian\\\\Desktop\\\\code\\\\web-casacusia'; Get-Command npm -ErrorAction SilentlyContinue | Select-Object -ExpandProperty Source\")",
+      "Bash(cmd.exe /c \"cd /d C:\\\\Users\\\\Julian\\\\Desktop\\\\code\\\\web-casacusia && node_modules\\\\.bin\\\\next.cmd dev --port 3000 > C:\\\\Users\\\\Julian\\\\AppData\\\\Local\\\\Temp\\\\nextjs-dev.log 2>&1 &\")",
+      "Bash(cmd.exe /c \"type C:\\\\Users\\\\Julian\\\\AppData\\\\Local\\\\Temp\\\\nextjs-dev.log 2>&1\")",
+      "Bash(cmd.exe /c \"cd /d C:\\\\Users\\\\Julian\\\\Desktop\\\\code\\\\web-casacusia && start /B node_modules\\\\.bin\\\\next.cmd dev 2>&1\")",
+      "Bash(cmd.exe /c \"netstat -ano | findstr :3000 2>&1\")"
+    ]
+  }
+}

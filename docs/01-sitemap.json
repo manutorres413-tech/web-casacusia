@@ -1,0 +1,249 @@
+{
+  "$schema": "./sitemap.schema.json",
+  "site": {
+    "name": "CASACUSIA",
+    "url": "https://casacusia.org",
+    "defaultLocale": "es",
+    "locales": ["es", "en"]
+  },
+  "routes": [
+    {
+      "path": "/",
+      "title": "CASACUSIA · Transitando juntos la hipoacusia",
+      "description": "Fundación argentina que acompaña a personas con hipoacusia y sus familias. Comunidad, herramientas y concientización para vivir mejor la pérdida auditiva.",
+      "priority": 1.0,
+      "changefreq": "weekly",
+      "schema": ["Organization", "NGO", "BreadcrumbList"],
+      "keywords": ["hipoacusia Argentina", "fundación hipoacusia", "pérdida auditiva comunidad", "CASACUSIA"],
+      "wave": 1
+    },
+    {
+      "path": "/nosotros",
+      "title": "Nosotros · Qué es la hipoacusia y por qué existe CASACUSIA",
+      "description": "La hipoacusia es una discapacidad invisible que afecta a 1 de cada 20 personas. Conocé la historia, misión y valores de CASACUSIA.",
+      "priority": 0.9,
+      "schema": ["AboutPage", "Organization"],
+      "keywords": ["qué es hipoacusia", "tipos de hipoacusia", "hipoacusia discapacidad invisible"],
+      "wave": 1
+    },
+    {
+      "path": "/nosotros/equipo",
+      "title": "Equipo · Las personas detrás de CASACUSIA",
+      "description": "Rama, Ari, Valen, Melu, Toto, Nico, Manu, Shari y Lucas. El núcleo que empuja CASACUSIA todos los días.",
+      "priority": 0.8,
+      "schema": ["AboutPage", "Person[]"],
+      "keywords": ["equipo CASACUSIA", "Lucas Adlerstein"],
+      "wave": 1
+    },
+    {
+      "path": "/nosotros/historia",
+      "title": "Historia · Cómo nació CASACUSIA",
+      "description": "Desde la experiencia personal de Lucas hasta la Fundación en enero 2025. El recorrido de CASACUSIA.",
+      "priority": 0.6,
+      "schema": ["AboutPage"],
+      "wave": 1
+    },
+    {
+      "path": "/nosotros/legal",
+      "title": "Información legal · Personería, CUIT, ARCA",
+      "description": "Datos institucionales de la Fundación CASACUSIA. Aprobación ARCA para deducción de Impuesto a las Ganancias.",
+      "priority": 0.4,
+      "schema": ["AboutPage", "Organization"],
+      "wave": 1
+    },
+    {
+      "path": "/programas",
+      "title": "Programas · Comunidad, herramientas y concientización",
+      "description": "Los programas de CASACUSIA: encuentros presenciales y virtuales, red de padres y madres, podcast Sordo pero no mudo, charlas corporativas.",
+      "priority": 0.9,
+      "schema": ["CollectionPage"],
+      "wave": 1
+    },
+    {
+      "path": "/programas/encuentros",
+      "title": "Encuentros presenciales · Espacios para dejar de sentirse solo",
+      "description": "Encuentros presenciales en CABA, Misiones, Mendoza, Bariloche, Córdoba, La Plata y Madrid. Compartí experiencias con otras personas con hipoacusia.",
+      "priority": 0.8,
+      "schema": ["Event", "CollectionPage"],
+      "keywords": ["encuentros hipoacusia", "comunidad hipoacusia Argentina"],
+      "wave": 1
+    },
+    {
+      "path": "/programas/encuentros-virtuales",
+      "title": "Encuentros virtuales · Conectate desde donde estés",
+      "description": "Encuentros online por Google Meet. Para quienes no pueden moverse, para la diáspora y para el interior.",
+      "priority": 0.7,
+      "schema": ["Event"],
+      "wave": 1
+    },
+    {
+      "path": "/programas/red-padres-madres",
+      "title": "Red de padres y madres · 220+ familias que te entienden",
+      "description": "Espacio virtual para padres y madres de chicos con hipoacusia. Compartir experiencias, encontrar caminos, dejar de cargar el diagnóstico en silencio.",
+      "priority": 0.8,
+      "schema": ["Event", "CollectionPage"],
+      "keywords": ["mi hijo es sordo qué hago", "padres chicos hipoacusia", "comunidad padres hipoacusia"],
+      "wave": 1
+    },
+    {
+      "path": "/programas/charlas-corporativas",
+      "title": "Charlas corporativas · Empatía, accesibilidad, diversidad",
+      "description": "Charlas y workshops para empresas sobre hipoacusia, inclusión laboral y cultura empática. Con Lucas Adlerstein.",
+      "priority": 0.7,
+      "schema": ["Service"],
+      "keywords": ["charlas hipoacusia empresas", "capacitación accesibilidad"],
+      "wave": 1
+    },
+    {
+      "path": "/podcast",
+      "title": "Sordo pero no mudo · El podcast de CASACUSIA",
+      "description": "Conversaciones, identificación y aprendizaje sobre hipoacusia. Escuchá el podcast oficial de CASACUSIA con episodios semanales y transcripción completa.",
+      "priority": 0.9,
+      "schema": ["PodcastSeries"],
+      "keywords": ["podcast hipoacusia", "sordo pero no mudo", "podcast discapacidad auditiva"],
+      "wave": 2
+    },
+    {
+      "path": "/podcast/[slug]",
+      "title": "{episodio.titulo} · Sordo pero no mudo",
+      "dynamic": true,
+      "source": "content/podcast/*.mdx",
+      "schema": ["PodcastEpisode"],
+      "wave": 2
+    },
+    {
+      "path": "/aliados",
+      "title": "Aliados · Las empresas y fundaciones que hacen posible CASACUSIA",
+      "description": "29 aliados corporativos e institucionales que apoyan a CASACUSIA. Conocé la historia detrás de cada alianza.",
+      "priority": 0.8,
+      "schema": ["CollectionPage"],
+      "wave": 2
+    },
+    {
+      "path": "/aliados/[marca]",
+      "title": "{aliado.nombre} + CASACUSIA · Una alianza con impacto",
+      "dynamic": true,
+      "source": "content/aliados/*.json",
+      "schema": ["Organization"],
+      "wave": 2
+    },
+    {
+      "path": "/sumate",
+      "title": "Sumate · 4 formas de ser parte de CASACUSIA",
+      "description": "Donar, ser voluntario, hacer proyectos juntos o donar servicios. Cuatro caminos equivalentes para acompañar a CASACUSIA.",
+      "priority": 0.9,
+      "schema": ["WebPage"],
+      "wave": 1
+    },
+    {
+      "path": "/sumate/donar",
+      "title": "Donar · Ayudanos a que nadie transite la hipoacusia en soledad",
+      "description": "Donación mensual, única o en USD. Las donaciones de empresas son deducibles del Impuesto a las Ganancias (ARCA).",
+      "priority": 0.9,
+      "schema": ["DonateAction"],
+      "keywords": ["donar hipoacusia", "ONG discapacidad auditiva Argentina"],
+      "wave": 1
+    },
+    {
+      "path": "/sumate/voluntariado",
+      "title": "Voluntariado · El motor de CASACUSIA",
+      "description": "Conocé al equipo de voluntarios organizado por comisiones. Hoy estamos con equipo completo; podés dejar tus datos para cuando volvamos a abrir.",
+      "priority": 0.7,
+      "schema": ["WebPage", "Person[]"],
+      "keywords": ["voluntariado hipoacusia", "voluntariado ONG Argentina"],
+      "wave": 1
+    },
+    {
+      "path": "/sumate/proyectos-juntos",
+      "title": "Hacer proyectos juntos · Alianzas con empresas e instituciones",
+      "description": "Charlas, workshops, convenios, investigación y campañas conjuntas con empresas, ONGs, fundaciones y académicos.",
+      "priority": 0.8,
+      "schema": ["WebPage"],
+      "keywords": ["alianzas ONG empresa", "RSE hipoacusia"],
+      "wave": 1
+    },
+    {
+      "path": "/sumate/donar-servicios",
+      "title": "Donar servicios · Aportá con tu expertise",
+      "description": "Pro-bono, productos, infraestructura u horas profesionales. Ejemplos de lo que ya donan nuestros aliados.",
+      "priority": 0.7,
+      "schema": ["WebPage"],
+      "wave": 1
+    },
+    {
+      "path": "/impacto",
+      "title": "Impacto · Transparencia y reconocimientos",
+      "description": "Memoria anual, balance, reconocimientos institucionales y aprobación ARCA de CASACUSIA.",
+      "priority": 0.7,
+      "schema": ["WebPage"],
+      "wave": 2
+    },
+    {
+      "path": "/impacto/memoria-anual",
+      "title": "Memoria anual · Lo que hicimos en el año",
+      "priority": 0.6,
+      "schema": ["Report"],
+      "wave": 2
+    },
+    {
+      "path": "/impacto/reconocimientos",
+      "title": "Reconocimientos · Misiones, Posadas, Mendoza, ARCA",
+      "description": "Declaraciones de interés social y reconocimientos institucionales que acompañan a CASACUSIA.",
+      "priority": 0.6,
+      "schema": ["WebPage"],
+      "wave": 2
+    },
+    {
+      "path": "/recursos/blog",
+      "title": "Blog · Información clara y útil sobre hipoacusia",
+      "priority": 0.8,
+      "schema": ["Blog"],
+      "wave": 2
+    },
+    {
+      "path": "/recursos/blog/[slug]",
+      "dynamic": true,
+      "source": "content/blog/*.mdx",
+      "schema": ["BlogPosting"],
+      "wave": 2
+    },
+    {
+      "path": "/recursos/faq",
+      "title": "Preguntas frecuentes · Hipoacusia, audífonos, implantes, cobertura",
+      "description": "Respuestas concretas a las preguntas más frecuentes sobre hipoacusia, dispositivos, obra social y más.",
+      "priority": 0.8,
+      "schema": ["FAQPage"],
+      "wave": 2
+    },
+    {
+      "path": "/prensa",
+      "title": "Prensa · Press kit y contacto para medios",
+      "description": "Material de prensa, logos, fotos, notas publicadas y contacto directo para medios.",
+      "priority": 0.6,
+      "schema": ["WebPage"],
+      "wave": 2
+    },
+    {
+      "path": "/contacto",
+      "title": "Contacto · Escribinos según tu consulta",
+      "description": "Formulario segmentado: prensa, empresa, voluntariado, consulta personal o profesional. También por WhatsApp community.",
+      "priority": 0.7,
+      "schema": ["ContactPage"],
+      "wave": 1
+    },
+    {
+      "path": "/accesibilidad",
+      "title": "Accesibilidad · Declaración WCAG 2.2 AA",
+      "description": "Cómo garantizamos que esta web sea accesible para personas con hipoacusia y todo tipo de discapacidad.",
+      "priority": 0.4,
+      "schema": ["WebPage"],
+      "wave": 3
+    }
+  ],
+  "redirects": [
+    { "from": "/colaborar", "to": "/sumate", "statusCode": 301 },
+    { "from": "/voluntarios", "to": "/sumate/voluntariado", "statusCode": 301 },
+    { "from": "/blog", "to": "/recursos/blog", "statusCode": 301 },
+    { "from": "/inicio/blog", "to": "/recursos/blog", "statusCode": 301 }
+  ]
+}

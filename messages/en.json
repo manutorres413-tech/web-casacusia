@@ -1,0 +1,528 @@
+{
+  "common": {
+    "donar": "Donate",
+    "sumate": "Join us",
+    "contacto": "Contact",
+    "leerMas": "Read more",
+    "verMas": "See more",
+    "verTodos": "See all",
+    "cargando": "Loading…",
+    "volverAlInicio": "Back to home",
+    "cerrar": "Close"
+  },
+  "nav": {
+    "nosotros": "About",
+    "programas": "Programs",
+    "podcast": "Podcast",
+    "aliados": "Partners",
+    "impacto": "Impact",
+    "sumate": "Join us",
+    "contacto": "Contact",
+    "recursos": "Resources",
+    "abrirMenu": "Open menu",
+    "cerrarMenu": "Close menu",
+    "saltarAlContenido": "Skip to main content"
+  },
+  "home": {
+    "title": "CASACUSIA · We work for the people, not the ears",
+    "description": "Foundation dedicated to accompanying people with hearing loss and their families. Meetups, podcast, parents network and more.",
+    "hero": {
+      "eyebrow": "Argentine Foundation · since 2025",
+      "title": "You are not alone.",
+      "titleLine2": "1 in 20 people has hearing loss.",
+      "subtitle": "CASACUSIA is an NGO that accompanies people with hearing loss and their families so that no one goes through it alone. We build community, tools, and a network that grows every day.",
+      "ctaPrimary": "Come to the meetups",
+      "ctaSecondary": "Explore programs",
+      "ctaTertiary": "Donate",
+      "stats": {
+        "comunidad": "people in community",
+        "ciudades": "connected cities",
+        "episodios": "podcast episodes"
+      }
+    },
+    "esencia": {
+      "eyebrow": "Disability is not the silence",
+      "title": "It's the loneliness.",
+      "body": "We work for the people, not the ears. Hearing loss is not cured: it is accepted, lived through, and shared. And when we do it together, everything becomes easier.",
+      "cta": "Meet the team"
+    },
+    "trust": {
+      "tagline": "A recognized Foundation",
+      "institucional": "Institutional",
+      "prev": "Previous",
+      "next": "Next",
+      "badges": [
+        "Legislative Interest · Misiones",
+        "Social Interest · Posadas",
+        "Social Interest · Mendoza",
+        "Innovation · Innovation Park",
+        "MODO Award · Social Impact"
+      ]
+    },
+    "aliados": {
+      "eyebrow": "Our partners",
+      "title": "Companies and institutions that push us forward",
+      "body": "Our network of institutional allies is fundamental to sustain and scale the impact of our free programs.",
+      "cta": "See all partners",
+      "nosImpulsan": "Driving us forward",
+      "colaboraron": "Collaborated with CASACUSIA",
+      "aporte": "Contribution"
+    },
+    "iniciativas": {
+      "eyebrow": "Our initiatives",
+      "title": "Impact in action",
+      "body": "Our programs are designed to accompany you at every stage, connect stories, generate tools and foster a more conscious and supportive society."
+    },
+    "impacto": {
+      "eyebrow": "Our impact",
+      "title": "Numbers that tell stories",
+      "items": {
+        "participantes": "Participants in meetups",
+        "encuentros": "Meetups held",
+        "ciudades": "Cities reached",
+        "familias": "Families in the Network",
+        "episodios": "Podcast episodes"
+      }
+    },
+    "testimonios": {
+      "eyebrow": "What they tell us",
+      "title": "Stories that sustain CASACUSIA"
+    },
+    "proximoEncuentro": {
+      "eyebrow": "Join the next one",
+      "title": "Calendar of Activities",
+      "body": "Connect with the CASACUSIA community. Check the calendar, join the next in-person or virtual event and sign up directly from here.",
+      "cta": "View profile on Luma",
+      "banner": {
+        "eyebrow": "Next Meetup",
+        "title": "Want to join the next meetup?",
+        "body": "Join the CASACUSIA community at our next in-person event. Reserve your spot on Luma.",
+        "cta": "Join now"
+      }
+    },
+    "podcast": {
+      "eyebrow": "Sordo pero no mudo",
+      "title": "Our podcast",
+      "body": "Conversations, identification and learning about hearing loss. Listen to it with full transcription.",
+      "cta": "See all episodes"
+    },
+    "cuatroCaminos": {
+      "eyebrow": "Join us",
+      "title": "There is a place for you",
+      "body": "It doesn't matter if you are a professional, if you want to donate your time or if you can contribute financially. Every action counts.",
+      "donar": "Donate",
+      "donarDesc": "Your monthly contribution allows us to sustain the infrastructure and free programs.",
+      "voluntariado": "Volunteering",
+      "voluntariadoDesc": "Join one of our commissions and put your talent at the service of the community.",
+      "proyectos": "Do projects together",
+      "proyectosDesc": "If you have a company or brand, we can create social impact alliances.",
+      "servicios": "Donate services",
+      "serviciosDesc": "You can contribute your professional services to boost the foundation's reach.",
+      "more": "Learn more"
+    },
+    "voluntariado": {
+      "titlePrefix": "CASACUSIA's engine is its people",
+      "subtitle": "We are already {count} volunteers working in {groups} commissions to transform the reality of hearing loss.",
+      "cta": "I want to volunteer"
+    },
+    "newsletter": {
+      "title": "Receive news",
+      "subtitle": "Receive stories, resources and upcoming meetups. No spam, with love.",
+      "name": "Name",
+      "email": "Email",
+      "consent": "I agree to receive news by email.",
+      "submit": "Subscribe",
+      "success": "Thanks! We'll write to you soon.",
+      "error": "Something went wrong. Try again in a bit."
+    }
+  },
+  "aliados": {
+    "title": "Allies · The companies that make CASACUSIA possible",
+    "description": "29 institutional allies that support CASACUSIA. Meet the story behind each alliance.",
+    "hero": {
+      "eyebrow": "Allies",
+      "title": "They support us and help us grow",
+      "subtitle": "Behind every alliance there is a project, a team and a concrete impact."
+    }
+  },
+  "impacto": {
+    "title": "Impact · Transparency and recognition",
+    "description": "Annual report, balance sheet, institutional recognitions and ARCA approval of the CASACUSIA Foundation.",
+    "hero": {
+      "eyebrow": "Impact",
+      "title": "Transparency and recognition",
+      "subtitle": "The numbers we measure and the institutional recognitions that accompany our work."
+    },
+    "reconocimientos": {
+      "title": "Recognitions"
+    }
+  },
+  "podcast": {
+    "title": "Sordo pero no mudo · CASACUSIA's podcast",
+    "description": "Honest conversations about hearing loss. Stories, specialists and learning with full transcription.",
+    "hero": {
+      "eyebrow": "Sordo pero no mudo",
+      "title": "Our podcast",
+      "subtitle": "Conversations, identification and learning about hearing loss. Listen to it with full transcription."
+    },
+    "filterLabel": "Filter episodes by category",
+    "filterDestacados": "Featured",
+    "noResults": "No episodes found in this category.",
+    "episodio": "Episode",
+    "con": "with",
+    "conTranscripcion": "with transcript",
+    "categorias": {
+      "historias": "Stories and Testimonials",
+      "salud": "Health and Specialists",
+      "tecnologia": "Technology and Devices",
+      "bienestar": "Well-being and Reflection",
+      "derechos": "Rights and Inclusion",
+      "tips": "Tips and Daily Life"
+    }
+  },
+  "nosotros": {
+    "title": "About · What hearing loss is and why CASACUSIA exists",
+    "description": "Hearing loss is an invisible disability affecting 1 in 20 people. Meet the history, mission and values of the CASACUSIA Foundation.",
+    "hero": {
+      "eyebrow": "About CASACUSIA",
+      "title": "We work for the people, not the ears.",
+      "subtitle": "Did you ever think you were the only person with hearing loss? CASACUSIA was born to show you that many of us go through hearing loss. We seek to transform how each one of us relates to their hearing loss, so we can live better. We seek that no one walks through their hearing loss in solitude."
+    },
+    "stats": {
+      "title": "What is hearing loss?",
+      "body": "Hearing loss is the total or partial decrease in hearing capacity. It can be unilateral or bilateral; mild, moderate, severe or profound. The WHO classifies it as an invisible disability.",
+      "items": {
+        "world": { "n": "1 in 20", "l": "People in the world have some degree of hearing loss." },
+        "argentina": { "n": "+2 million", "l": "People in Argentina have hearing loss." },
+        "oms": { "n": "700M", "l": "WHO projection towards 2050 with disabling hearing loss." }
+      }
+    },
+    "brecha": {
+      "eyebrow": "Why CASACUSIA exists",
+      "title": "A need that was not being addressed",
+      "p1": "Hearing loss is usually addressed from a medical or technical paradigm: audiometries, devices, surgeries. However, many people not only face hearing barriers, but also isolation, shame, lack of information and few spaces of belonging.",
+      "p2": "That impacts mental health, socialization, education and employment. Many people go through their process in solitude. CASACUSIA exists to respond to that gap."
+    },
+    "horizonte": {
+      "title": "Our horizon",
+      "mision": {
+        "label": "Mission",
+        "title": "Transform the relationship of people with their hearing loss, to improve their quality of life.",
+        "body": "We understand the relationship with hearing loss as the way we see our deck of cards."
+      },
+      "vision": {
+        "label": "Vision",
+        "title": "To be an inspiring movement that accompanies and empowers people with hearing loss, promoting a more conscious and supportive society."
+      }
+    },
+    "valores": {
+      "title": "Our values",
+      "body": "The pillars that sustain every project, meeting and decision of the foundation.",
+      "items": {
+        "apoyo": { "name": "Mutual support", "desc": "We support each other." },
+        "empatia": { "name": "Empathy", "desc": "Listen before speaking." },
+        "simpleza": { "name": "Simplicity", "desc": "Clear information, no jargon." },
+        "transparencia": { "name": "Transparency", "desc": "Accountability and open doors." },
+        "respeto": { "name": "Respect", "desc": "Every story matters." },
+        "pureza": { "name": "Purity", "desc": "Saying things as they are." },
+        "innovacion": { "name": "Innovation", "desc": "Daring to try the new." }
+      }
+    },
+    "cta": {
+      "title": "Join CASACUSIA",
+      "body": "There are four ways to be part of this movement: donate, volunteer, do projects together or donate your services as a professional.",
+      "primary": "See the 4 ways",
+      "secondary": "Meet the team"
+    },
+    "equipo": {
+      "title": "Team · The people behind CASACUSIA",
+      "description": "Meet the team behind the CASACUSIA Foundation: Rama, Valen, Melu, Toto, Nico, Manu, Shari, Lucas, Vero and Judi.",
+      "heading": "The people pushing CASACUSIA forward",
+      "subtitle": "An interdisciplinary team combining passion, love, ambition for a better world and talent. We seek to listen and be heard. Behind every program there's a person who cares for it.",
+      "fundador": "Founder",
+      "linkedin": "LinkedIn",
+      "ctaVolHeading": "Join the volunteer team",
+      "ctaVolSub": "Beyond the core there are dozens of volunteers organized in commissions.",
+      "ctaVolLabel": "Meet the volunteers",
+      "members": {
+        "lucas-adlerstein": {
+          "rol": "Founder and Director",
+          "bio": "Lost his hearing at age 15. Content creator and reference in hearing disability. Founded CASACUSIA to transform how hearing loss is experienced."
+        },
+        "rama": {
+          "rol": "Founding Team",
+          "bio": "Part of the core that sustains CASACUSIA since its inception. Brings strategic vision and experience in the development of social projects."
+        },
+        "valen": {
+          "rol": "Communications",
+          "bio": "Coordinates communications at CASACUSIA. Specialist in digital media, public relations and content strategy."
+        },
+        "melu": {
+          "rol": "General Coordination",
+          "bio": "Ensures that teams and projects function with clarity. Her training allows her to manage operations and optimize internal processes."
+        },
+        "shari": {
+          "rol": "Meetups Leader",
+          "bio": "Leads in-person and virtual meetups. Brings her expertise in group dynamics and community support."
+        },
+        "toto": {
+          "rol": "Meetups Operations Leader",
+          "bio": "Coordinates meetup operations alongside Shari."
+        },
+        "nico": {
+          "rol": "Head of Fundraising",
+          "bio": "Industrial Engineer (ITBA). Leads the fundraising strategy, developing relationships with donors and strategic allies to ensure the sustainability and growth of CASACUSIA's social impact."
+        },
+        "manu": {
+          "rol": "2026 Web Project Leader",
+          "bio": "Leads the project for the new website. Specialized in technological development, product design and user experience."
+        },
+        "vero": {
+          "rol": "Team",
+          "bio": "Degree in Communication (UBA) and Ontological Coach. With more than 20 years of experience in regional marketing for major brands, she is co-founder of Chaucha and Hormigas Group. She brings her strategic and human vision to the team."
+        },
+        "judi": {
+          "rol": "Team",
+          "bio": "Accompanies and makes CASACUSIA's mission possible."
+        }
+      }
+    },
+    "historia": {
+      "title": "History · How CASACUSIA started",
+      "description": "From Lucas' personal experience to the Foundation in January 2025. The story of CASACUSIA."
+    },
+    "legal": {
+      "title": "Legal information · CASACUSIA",
+      "description": "Institutional data of the CASACUSIA Foundation. ARCA approval for income tax deduction.",
+      "heading": "Legal information",
+      "subtitle": "We are a Foundation with legal entity status in Argentina."
+    }
+  },
+  "sumate": {
+    "title": "Join us · 4 ways to be part of CASACUSIA",
+    "description": "Donate, volunteer, do projects together or donate services. Four equivalent paths to join CASACUSIA.",
+    "hero": {
+      "eyebrow": "Join us",
+      "title": "Four ways to be part.",
+      "subtitle": "You don't need to donate money. There are four equivalent paths and they all count."
+    },
+    "donar": {
+      "title": "Donate · Your contribution transforms lives",
+      "description": "Support CASACUSIA financially so we can continue providing free programs to the community.",
+      "heading": "Every contribution sustains this community.",
+      "subtitle": "Your donation allows us to organize meetups, produce the podcast, sustain the Families Network and accompany hundreds of people every day.",
+      "niveles": {
+        "eyebrow": "Monthly contributions",
+        "title": "Choose your level of support",
+        "body": "Turn the grains into support. You can cancel at any time."
+      },
+      "impacto": {
+        "title": "This is what you finance with your contribution",
+        "body": "Thanks to the community we can sustain these spaces where we meet and learn."
+      },
+      "empresa": {
+        "label": "Companies",
+        "title": "Institutional support",
+        "body": "CASACUSIA has ARCA approval so that companies can deduct their donations within the current limits. We send you the corresponding tax documentation.",
+        "cta": "Contact the team",
+        "items": [
+          "Full and immediate tax documentation.",
+          "You can assign your contribution to a specific program (e.g. Podcast).",
+          "Optional joint communication with your sustainability team.",
+          "Detailed annual reporting of the impact of your contribution."
+        ]
+      },
+      "planes": {
+        "cafe": {
+          "titulo": "Flat White Coffee",
+          "desc": "You buy us a coffee a month. Helps sustain the basic infrastructure of the NGO.",
+          "cta": "Buy coffee"
+        },
+        "toston": {
+          "titulo": "Coffee + Toast",
+          "desc": "A high-impact contribution. You directly help sustain and produce the podcast.",
+          "cta": "Choose this contribution"
+        },
+        "asado": {
+          "titulo": "Asado Ribs",
+          "desc": "A key contribution to sustain the logistics of our large in-person meetups.",
+          "cta": "Pay for the asado"
+        }
+      },
+      "custom": "Choose the monthly amount myself",
+      "once": "Donate once or in USD"
+    },
+    "voluntariado": {
+      "title": "Volunteering · CASACUSIA's engine",
+      "description": "Meet the volunteer team organized by commissions. Today the team is full; you can leave your data for when we reopen.",
+      "heading": "We are more than what is seen.",
+      "subtitle": "Behind every meetup, every episode and every message we respond to, there are dozens of volunteers organized by commissions who make all this possible.",
+      "eyebrow": "Meet those who put their heart into it",
+      "voluntariosCount": "{count} volunteers",
+      "comisionesCount": "{count} commissions",
+      "cupoCompleto": "Full capacity",
+      "equipoCompleto": "Today we have a full team",
+      "waitlistDesc": "We are not bringing in new volunteers at this time. If you want to leave your data for when we reopen calls, write to us telling us about yourself.",
+      "ctaDatos": "Leave my data",
+      "ctaOtrasFormas": "See other ways to join",
+      "filterLabel": "Filter by commission",
+      "filterAll": "All",
+      "noResults": "No volunteers to show.",
+      "commission": {
+        "comunicacion": "Communications",
+        "encuentros": "Meetups",
+        "podcast": "Podcast",
+        "red-padres": "Parents network",
+        "contenido": "Content",
+        "fundraising": "Fundraising",
+        "tecnologia": "Technology",
+        "diseno": "Design",
+        "otro": "Other"
+      }
+    },
+    "proyectosJuntos": {
+      "title": "Projects together · Alliances with companies and institutions",
+      "description": "Talks, workshops, agreements, research and joint campaigns. There is much to do and fly.",
+      "heading": "For companies, NGOs, institutions and professionals.",
+      "subtitle": "One of the obstacles in disability is when it's hard for us to ask. Because asking… expands our field of action. We believe in alliances that combine purpose with serious work. If your organization wants to do something with us, write to us!",
+      "tiposHeading": "Ways of working",
+      "tipos": {
+        "charlas": { "title": "Talks", "desc": "For companies, universities and schools about hearing loss, inclusion and empathy." },
+        "workshops": { "title": "Workshops", "desc": "Experiential dynamics to rethink accessibility from day to day." },
+        "campanas": { "title": "Campaigns", "desc": "Awareness, fundraising or joint communication." },
+        "convenios": { "title": "Agreements", "desc": "With universities, professional associations, hospitals and friendly NGOs." },
+        "investigacion": { "title": "Research", "desc": "On hearing loss, quality of life and access to rights." },
+        "rse": { "title": "CSR with meaning", "desc": "Projects with measurable impact, not greenwashing." }
+      },
+      "porqueHeading": "Why with CASACUSIA",
+      "porqueSub": "What we bring to the alliance",
+      "porqueItems": [
+        { "title": "Experiential legitimacy", "desc": "Lucas and the team live what we communicate." },
+        { "title": "Active community", "desc": "Real and engaged audience on IG, TikTok, YouTube and podcast." },
+        { "title": "Territorial network", "desc": "Presence in CABA, Misiones, Mendoza, Bariloche, Córdoba, La Plata and Madrid." },
+        { "title": "Interdisciplinary team", "desc": "Professionals with rigor + sensitivity." },
+        { "title": "Beloved brand", "desc": "Warm, human narrative, without technical jargon." }
+      ],
+      "ctaHeading": "What do you have in mind?",
+      "ctaSub": "Write to us telling us about your organization and what kind of alliance you imagine. We reply in a few business days.",
+      "ctaForm": "Go to form",
+      "ctaAliados": "See current allies"
+    },
+    "donarServicios": {
+      "title": "Donate services · Contribute with your expertise",
+      "description": "Pro-bono, products, infrastructure or professional hours. Examples of what our allies already donate.",
+      "heading": "Contribute with what you already know how to do.",
+      "subtitle": "Not everything is done with money. Professional hours, products, infrastructure or pro-bono: there are many ways to add up.",
+      "necesidadesEyebrow": "Where there is a gap",
+      "necesidadesHeading": "What we need today",
+      "necesidades": {
+        "tecnologia": { "title": "Technology", "desc": "Next.js/frontend development, UX/UI, devops." },
+        "legal": { "title": "Legal", "desc": "Agreements, data privacy, fundraising." },
+        "contable": { "title": "Accounting", "desc": "Balances, grants, ARCA." },
+        "audiovisual": { "title": "Audiovisual", "desc": "Podcast editing, video, transcriptions." },
+        "diseno": { "title": "Graphic design", "desc": "Social media pieces, materials for meetups." },
+        "editorial": { "title": "Editorial", "desc": "Proofreading, SEO writing, ES↔EN translations." },
+        "espacios": { "title": "Physical spaces", "desc": "Meeting rooms in different cities." },
+        "catering": { "title": "Catering / logistics", "desc": "For in-person meetups." }
+      },
+      "comoFunciona": "How it works",
+      "pasos": [
+        "We read you carefully.",
+        "If there is an immediate fit, we coordinate a virtual talk.",
+        "If there is no fit now, you stay in our network for a future project.",
+        "In any case, we always respond."
+      ],
+      "cta": "Write to the team"
+    }
+  },
+  "programas": {
+    "title": "Programs · Community, tools and awareness",
+    "description": "CASACUSIA's programs: in-person and virtual meetups, parents network, Sordo pero no mudo podcast, institutional talks.",
+    "hero": {
+      "eyebrow": "Programs",
+      "title": "CASACUSIA Programs",
+      "subtitle": "Meetups, parents network, podcast and institutional talks. The programs with which CASACUSIA accompanies the community."
+    },
+    "items": {
+      "encuentros": {
+        "titulo": "In-person meetups",
+        "subtitulo": "In-person community spaces",
+        "resumen": "Meetups in CABA, Misiones, Mendoza, Bariloche, Córdoba, La Plata and Madrid. To stop feeling alone.",
+        "cta": "Upcoming meetups"
+      },
+      "encuentros-virtuales": {
+        "titulo": "Virtual meetups",
+        "subtitulo": "Connect from wherever you are",
+        "resumen": "Online meetups via Google Meet for the entire diaspora and the interior.",
+        "cta": "Learn more"
+      },
+      "red-padres-madres": {
+        "titulo": "Families network",
+        "subtitulo": "220+ families who understand you",
+        "resumen": "Free virtual space for parents of children with hearing loss.",
+        "cta": "Join the network"
+      },
+      "podcast": {
+        "titulo": "Sordo pero no mudo",
+        "subtitulo": "CASACUSIA's podcast",
+        "resumen": "60+ episodes with full transcription. Conversations, identification and learning.",
+        "cta": "Listen to episodes"
+      },
+      "charlas-corporativas": {
+        "titulo": "Institutional talks",
+        "subtitulo": "Empathy, accessibility, diversity",
+        "resumen": "Talks and workshops for organizations, universities and schools.",
+        "cta": "Request a talk"
+      }
+    }
+  },
+  "contacto": {
+    "title": "Contact · Write to us based on your inquiry",
+    "description": "Segmented form by type of inquiry: press, company, volunteering, personal, professional. Also via WhatsApp community.",
+    "hero": {
+      "eyebrow": "Contact",
+      "title": "Write to us.",
+      "subtitle": "Tell us briefly what your inquiry is about and we'll get back to you as soon as we can. You can also join our WhatsApp community to stay close."
+    },
+    "fastChannels": "Fast channels",
+    "writeUs": "Or write to us here",
+    "honesty": "We're a small team and receive many messages. Sometimes we're slow to reply. If it's urgent, try joining the WhatsApp community or reach us on Instagram first.",
+    "form": {
+      "type": "Type of inquiry",
+      "types": {
+        "personal": "Personal inquiry",
+        "voluntariado": "Volunteering",
+        "prensa": "Press / media",
+        "empresa": "Company / institution",
+        "profesional": "Professional",
+        "otro": "Other"
+      },
+      "name": "Full name",
+      "email": "Email",
+      "phone": "Phone (optional)",
+      "location": "Country / city",
+      "message": "Your message",
+      "howFound": "How did you hear about us? (optional)",
+      "consent": "I agree that CASACUSIA stores this data to reply to my inquiry.",
+      "submit": "Send",
+      "success": "Thanks! We'll be in touch soon.",
+      "error": "Couldn't send your message. Try again or reach us at our social media."
+    }
+  },
+  "footer": {
+    "about": "Argentine Foundation committed to improving the quality of life of people with hearing loss through meeting, reflection and human connection.",
+    "nav": "Explore",
+    "social": "Connect",
+    "legal": "Legal",
+    "rights": "All rights reserved.",
+    "accesibilidad": "Accessibility",
+    "privacidad": "Privacy policy"
+  },
+  "a11y": {
+    "skipToContent": "Skip to main content",
+    "externalLink": "(opens in new tab)",
+    "navigation": "Main navigation",
+    "social": "Social media",
+    "languages": "Select language"
+  }
+}

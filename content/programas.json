@@ -1,0 +1,52 @@
+[
+  {
+    "slug": "encuentros",
+    "titulo": "Encuentros presenciales",
+    "subtitulo": "Espacios de comunidad en persona",
+    "resumen": "Encuentros en CABA, Misiones, Mendoza, Bariloche, Córdoba, La Plata y Madrid. Para dejar de sentirse solo.",
+    "categorias": ["comunidad"],
+    "cta": { "label": "Próximos encuentros", "href": "https://lu.ma/hipoacusia" },
+    "destacado": true,
+    "orden": 1
+  },
+  {
+    "slug": "encuentros-virtuales",
+    "titulo": "Encuentros virtuales",
+    "subtitulo": "Conectate desde donde estés",
+    "resumen": "Encuentros online por Google Meet para toda la diáspora y el interior.",
+    "categorias": ["comunidad"],
+    "cta": { "label": "Conocer más", "href": "https://lu.ma/hipoacusia" },
+    "destacado": true,
+    "orden": 2
+  },
+  {
+    "slug": "red-padres-madres",
+    "titulo": "Red de familias",
+    "subtitulo": "220+ familias que te entienden",
+    "resumen": "Espacio virtual gratuito para padres y madres de chicos con hipoacusia.",
+    "categorias": ["comunidad"],
+    "cta": { "label": "Sumarse a la red", "href": "/programas/red-padres-madres" },
+    "destacado": true,
+    "orden": 3
+  },
+  {
+    "slug": "podcast",
+    "titulo": "Sordo pero no mudo",
+    "subtitulo": "El podcast de CASACUSIA",
+    "resumen": "60+ episodios con transcripción completa. Conversaciones, identificación y aprendizaje.",
+    "categorias": ["herramientas"],
+    "cta": { "label": "Escuchar episodios", "href": "/podcast" },
+    "destacado": true,
+    "orden": 4
+  },
+  {
+    "slug": "charlas-corporativas",
+    "titulo": "Charlas institucionales",
+    "subtitulo": "Empatía, accesibilidad, diversidad",
+    "resumen": "Charlas y workshops para organizaciones, universidades y escuelas.",
+    "categorias": ["sociedad"],
+    "cta": { "label": "Solicitar charla", "href": "/programas/charlas-corporativas" },
+    "destacado": true,
+    "orden": 5
+  }
+]

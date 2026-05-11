@@ -1,0 +1,149 @@
+﻿<html xmlns:o='urn:schemas-microsoft-com:office:office' xmlns:w='urn:schemas-microsoft-com:office:word' xmlns='http://www.w3.org/TR/REC-html40'>
+<head>
+<meta charset='utf-8'>
+<title>Informe de Secciones de la Web CASACUSIA</title>
+<style>
+body { font-family: 'Calibri', sans-serif; font-size: 11pt; line-height: 1.5; }
+h1 { font-size: 24pt; color: #2E74B5; margin-bottom: 12pt; }
+h2 { font-size: 18pt; color: #2E74B5; border-bottom: 1px solid #ccc; padding-bottom: 4px; margin-top: 24pt; }
+h3 { font-size: 14pt; color: #1F4D78; margin-top: 16pt; }
+.capture { font-style: italic; color: #888; background: #f4f4f4; padding: 10px; border: 1px dashed #ccc; text-align: center; margin: 15px 0; }
+ul { margin-top: 4px; margin-bottom: 12pt; }
+p { margin-bottom: 8pt; }
+</style>
+</head>
+<body>
+<h1>Informe de Secciones de la Web CASACUSIA</h1>
+<p>Este documento detalla la estructura y los textos completos de cada sección, ordenado tal cual se navega.</p>
+
+<h2>1. Home (Página de Inicio)</h2>
+
+<h3>1.1. Hero (Encabezado)</h3>
+<p><b>Volanta:</b> Fundación argentina · desde 2025</p>
+<p><b>Título:</b> No estás solo.</p>
+<p><b>Línea 2:</b> 1 de cada 20 personas tiene hipoacusia.</p>
+<p><b>Bajada:</b> CASACUSIA acompaña a personas con hipoacusia y a sus familias para que nadie transite la pérdida auditiva en soledad. Comunidad, herramientas y una red que crece todos los días.</p>
+<p><b>Botones:</b> Sumate a la comunidad / Conocé los programas / Doná</p>
+
+<h3>1.2. Caminos de Entrada</h3>
+<p><b>Título:</b> ¿Cómo llegás a CASACUSIA?</p>
+<ul>
+<li><b>Tengo hipoacusia:</b> Reuniones que agotan, llamadas que evitás... Botón: Conocer la comunidad</li>
+<li><b>Acompaño a alguien:</b> Sos madre, padre, pareja... Botón: Red de familias</li>
+<li><b>Quiero aliarme:</b> Soy empresa, ONG, institución... Botón: Proyectos juntos</li>
+</ul>
+
+<h3>1.3. Esencia</h3>
+<p><b>Volanta:</b> La discapacidad no es el silencio</p>
+<p><b>Título:</b> Es la soledad.</p>
+<p><b>Cuerpo:</b> Trabajamos para las personas, no para los oídos. La hipoacusia no se cura: se acepta, se transita, se comparte.</p>
+
+<h3>1.4. Confianza y Aliados</h3>
+<p><b>Badges:</b> ARCA Deducción Ganancias, Interés Legislativo Misiones, Premio MODO, etc.</p>
+
+<h3>1.5. Ejes de Trabajo</h3>
+<p><b>Título:</b> Comunidad, herramientas y sociedad</p>
+<p><b>Cuerpo:</b> Así se ordena lo que hacemos: generar comunidad, construir herramientas para la vida y trabajar en la concientización social.</p>
+
+<h3>1.6. Podcast y Newsletter</h3>
+<p><b>Podcast:</b> Conversaciones, identificación y aprendizaje sobre hipoacusia. Escuchalo con transcripción completa.</p>
+<p><b>Newsletter:</b> Recibí novedades. Carta quincenal de Lucas. Historias, recursos y próximos encuentros. Sin spam, con cariño.</p>
+<div class='capture'>[Pegar aquí captura de pantalla de Home Completa o por partes]</div>
+
+<h2>2. Nosotros</h2>
+
+<h3>2.1. Hero Nosotros</h3>
+<p><b>Volanta:</b> Sobre CASACUSIA</p>
+<p><b>Título:</b> Trabajamos para las personas, no para los oídos.</p>
+<p><b>Subtítulo:</b> Somos una Fundación argentina que acompaña a personas con hipoacusia y a sus familias para que ninguna transite su pérdida auditiva en soledad.</p>
+
+<h3>2.2. Equipo</h3>
+<p><b>Título:</b> Las personas que empujan CASACUSIA</p>
+<p><b>Subtítulo:</b> Un equipo interdisciplinario que combina legitimidad experiencial, capacidad de comunicación y diseño estratégico.</p>
+
+<h3>2.3. Historia</h3>
+<p><b>Título:</b> Historia · Cómo nació CASACUSIA</p>
+<p><b>Cuerpo:</b> Desde la experiencia personal de Lucas hasta la Fundación en enero 2025.</p>
+
+<h3>2.4. Información Legal</h3>
+<p><b>Título:</b> Información legal</p>
+<p><b>Cuerpo:</b> Somos una Fundación con personería jurídica en Argentina. Aprobación ARCA para deducción de Impuesto a las Ganancias.</p>
+<div class='capture'>[Pegar aquí captura de pantalla de Nosotros]</div>
+
+<h2>3. Programas</h2>
+
+<p><b>Título de la sección:</b> Los programas de CASACUSIA</p>
+<p>A continuación el detalle de los 5 programas (links):</p>
+
+<h3>3.1. Encuentros presenciales</h3>
+<p><b>Subtítulo:</b> Espacios de comunidad en persona</p>
+<p><b>Resumen:</b> Encuentros en CABA, Misiones, Mendoza, Bariloche, Córdoba, La Plata y Madrid. Para dejar de sentirse solo.</p>
+
+<h3>3.2. Encuentros virtuales</h3>
+<p><b>Subtítulo:</b> Conectate desde donde estés</p>
+<p><b>Resumen:</b> Encuentros online por Google Meet para toda la diáspora y el interior.</p>
+
+<h3>3.3. Red de padres y madres</h3>
+<p><b>Subtítulo:</b> 220+ familias que te entienden</p>
+<p><b>Resumen:</b> Espacio virtual gratuito para padres y madres de chicos con hipoacusia.</p>
+
+<h3>3.4. Podcast (Sordo pero no mudo)</h3>
+<p><b>Subtítulo:</b> El podcast de CASACUSIA</p>
+<p><b>Resumen:</b> 60+ episodios con transcripción completa. Conversaciones, identificación y aprendizaje.</p>
+
+<h3>3.5. Charlas institucionales</h3>
+<p><b>Subtítulo:</b> Empatía, accesibilidad, diversidad</p>
+<p><b>Resumen:</b> Charlas y workshops para organizaciones, universidades y escuelas.</p>
+<div class='capture'>[Pegar aquí capturas de pantalla de los Programas]</div>
+
+<h2>4. Podcast</h2>
+<p><b>Título:</b> Sordo pero no mudo</p>
+<p><b>Categorías para filtrar:</b> Destacados, Historias y Testimonios, Salud y Especialistas, Tecnología y Dispositivos, Bienestar y Reflexión, Derechos e Inclusión, Tips y Cotidianeidad.</p>
+<div class='capture'>[Pegar aquí captura de pantalla de la página Podcast]</div>
+
+<h2>5. Aliados</h2>
+<p><b>Título:</b> Las empresas y fundaciones que hacen posible CASACUSIA</p>
+<p><b>Subtítulo:</b> Detrás de cada alianza hay un proyecto, un equipo y un impacto concreto.</p>
+<p><b>Principales Aliados listados:</b> Marval (Asesoría legal), Helen Diller Foundation (Grant financiero), MercadoPago (Infraestructura de donaciones), Carrefour, Arcos Dorados, MODO, entre otros.</p>
+<div class='capture'>[Pegar aquí captura de pantalla de Aliados]</div>
+
+<h2>6. Impacto</h2>
+<p><b>Título:</b> Lo que logramos juntos</p>
+<ul>
+<li>Participantes Totales: <b>600</b></li>
+<li>Encuentros Realizados: <b>20</b></li>
+<li>Ciudades Alcanzadas: <b>7</b></li>
+<li>Padres en Red: <b>220</b></li>
+<li>Episodios Podcast: <b>60</b></li>
+<li>Voluntarios Activos: <b>24</b></li>
+<li>Horas Donadas Anuales: <b>1800</b></li>
+</ul>
+<div class='capture'>[Pegar aquí captura de pantalla de Impacto]</div>
+
+<h2>7. Sumate</h2>
+
+<h3>7.1. Inicio de Sumate</h3>
+<p><b>Título:</b> Cuatro formas de ser parte.</p>
+<p><b>Subtítulo:</b> No hace falta donar dinero. Hay cuatro caminos equivalentes y todos suman.</p>
+
+<h3>7.2. Donar</h3>
+<p><b>Título:</b> Cada aporte sostiene esta comunidad.</p>
+<p><b>Subtítulo:</b> Tu donación nos permite organizar encuentros, producir el podcast, sostener la Red de Padres y Madres.</p>
+<p><b>Opciones:</b> Mensual, única o en USD. Las donaciones de empresas son deducibles del Impuesto a las Ganancias.</p>
+
+<h3>7.3. Voluntariado</h3>
+<p><b>Título:</b> Somos más de los que se ven.</p>
+<p><b>Subtítulo:</b> Detrás de cada encuentro y episodio hay decenas de voluntarios (Comunicación, Encuentros, Podcast, Diseño).</p>
+
+<h3>7.4. Proyectos Juntos y Donar Servicios</h3>
+<p>Para empresas, ONGs e instituciones. Posibilidad de donar horas pro-bono, productos o infraestructura.</p>
+<div class='capture'>[Pegar aquí capturas de pantalla de la sección Sumate]</div>
+
+<h2>8. Contacto</h2>
+<p><b>Título:</b> Escribinos.</p>
+<p><b>Aviso:</b> Somos un equipo pequeño y recibimos muchos mensajes. A veces nos demoramos en responder.</p>
+<p><b>Opciones del formulario:</b> Consulta personal, Voluntariado, Prensa / medios, Empresa / institución, Profesional, Otro.</p>
+<div class='capture'>[Pegar aquí captura de pantalla de Contacto]</div>
+
+</body>
+</html>

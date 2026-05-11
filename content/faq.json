@@ -1,0 +1,74 @@
+[
+  {
+    "id": "que-es-casacusia",
+    "pregunta": "¿Qué es CASACUSIA?",
+    "respuesta": "CASACUSIA es una Fundación argentina, creada en enero de 2025, que acompaña a personas con hipoacusia y a sus familias. Trabaja desde una mirada centrada en las personas, no en los oídos: combina comunidad, información accesible e incidencia social. Fue fundada por Lucas Adlerstein.",
+    "categoria": "general",
+    "orden": 1,
+    "destacada": true
+  },
+  {
+    "id": "que-es-hipoacusia",
+    "pregunta": "¿Qué es la hipoacusia?",
+    "respuesta": "La hipoacusia es la disminución total o parcial de la capacidad auditiva. Puede ser unilateral o bilateral; leve, moderada, severa o profunda; conductiva, neurosensorial o mixta. La OMS la clasifica como una discapacidad invisible.",
+    "categoria": "hipoacusia",
+    "orden": 2,
+    "destacada": true
+  },
+  {
+    "id": "hipoacusia-argentina",
+    "pregunta": "¿Cuánta gente tiene hipoacusia en Argentina?",
+    "respuesta": "Se estima que más de 2 millones de personas en Argentina tienen algún grado de pérdida auditiva, aproximadamente 1 de cada 20 personas.",
+    "categoria": "hipoacusia",
+    "orden": 3,
+    "destacada": true
+  },
+  {
+    "id": "hipoacusia-cura",
+    "pregunta": "¿La hipoacusia se cura?",
+    "respuesta": "Generalmente no. En la mayoría de los casos la hipoacusia es una condición que se acompaña con dispositivos (audífonos, implantes cocleares) y con adaptaciones del entorno. Hay casos específicos (infecciones, tapones, algunas otosclerosis) que sí tienen tratamiento médico o quirúrgico.",
+    "categoria": "hipoacusia",
+    "orden": 4,
+    "destacada": false
+  },
+  {
+    "id": "diferencia-audifono-implante",
+    "pregunta": "¿Diferencia entre audífono e implante coclear?",
+    "respuesta": "El audífono amplifica sonidos y los envía al oído. El implante coclear estimula directamente el nervio auditivo mediante cirugía y se usa en hipoacusias severas o profundas cuando los audífonos ya no alcanzan.",
+    "categoria": "dispositivos",
+    "orden": 5,
+    "destacada": true
+  },
+  {
+    "id": "cobertura-obra-social",
+    "pregunta": "¿Los audífonos los cubre la obra social en Argentina?",
+    "respuesta": "Sí. La Ley 24.901 obliga a obras sociales y prepagas a cubrir el 100% de audífonos, implantes cocleares, baterías, moldes y rehabilitación auditiva cuando la persona tiene Certificado Único de Discapacidad (CUD).",
+    "categoria": "obras-sociales",
+    "orden": 6,
+    "destacada": true
+  },
+  {
+    "id": "hijo-hipoacusia",
+    "pregunta": "Mi hijo fue diagnosticado con hipoacusia, ¿qué hago?",
+    "respuesta": "Respirá. Pasos iniciales: (1) confirmar con un equipo ORL + fonoaudiología pediátrica, (2) tramitar el CUD, (3) iniciar cobertura por Ley 24.901, (4) conectar con otras familias. En CASACUSIA existe la Red de Padres y Madres con más de 220 familias.",
+    "categoria": "familia",
+    "orden": 7,
+    "destacada": true
+  },
+  {
+    "id": "donaciones-deducibles",
+    "pregunta": "¿Las donaciones a CASACUSIA son deducibles de impuestos?",
+    "respuesta": "Sí. CASACUSIA cuenta con aprobación ARCA para que las empresas puedan deducir sus donaciones del Impuesto a las Ganancias dentro de los topes que establece la normativa vigente.",
+    "categoria": "donar",
+    "orden": 8,
+    "destacada": true
+  },
+  {
+    "id": "como-donar",
+    "pregunta": "¿Cómo puedo donar a CASACUSIA?",
+    "respuesta": "Podés donar por MercadoPago (mensual o única vez), en pesos argentinos o en dólares para la diáspora, y también hacer aportes institucionales con deducción de Ganancias vía ARCA. Los caminos están disponibles en casacusia.org/sumate/donar.",
+    "categoria": "donar",
+    "orden": 9,
+    "destacada": false
+  }
+]

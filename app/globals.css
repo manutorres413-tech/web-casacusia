@@ -1,0 +1,62 @@
+@import "../styles/tokens.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html { color-scheme: light; }
+
+  body {
+    background-color: var(--color-surface-bg);
+    color: var(--color-ink);
+    font-family: var(--font-sans), system-ui, -apple-system, "Segoe UI", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  :where(a) { color: inherit; text-decoration: none; }
+
+  :where(h1, h2, h3, h4) {
+    color: var(--color-ink);
+    letter-spacing: -0.015em;
+  }
+
+  :focus-visible {
+    outline: 3px solid var(--color-verde);
+    outline-offset: 2px;
+    border-radius: calc(var(--radius-md) + 2px);
+  }
+
+  ::selection {
+    background-color: var(--color-verde-soft);
+    color: var(--color-verde-dark);
+  }
+}
+
+@layer components {
+  .skip-link {
+    position: absolute;
+    inset-block-start: 0.5rem;
+    inset-inline-start: 0.5rem;
+    z-index: 100;
+    padding: 0.625rem 1rem;
+    border-radius: var(--radius-md);
+    background: var(--color-ink);
+    color: var(--color-surface-bg);
+    font-weight: 600;
+    transform: translateY(-150%);
+    transition: transform var(--duration-normal) var(--ease-standard);
+  }
+  .skip-link:focus { transform: translateY(0); }
+
+  .container-prose {
+    max-width: 70ch;
+    margin-inline: auto;
+    padding-inline: 1rem;
+  }
+
+  .cursor-megaphone {
+    cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='none' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M11 5L6 9H2v6h4l5 4V5z'></path><path d='M19.07 4.93a10 10 0 0 1 0 14.14'></path><path d='M15.54 8.46a5 5 0 0 1 0 7.07'></path></svg>") 16 16, auto;
+  }
+}

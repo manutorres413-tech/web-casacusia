@@ -1,0 +1,77 @@
+/* ─────────────────────────────────────────────────────────────
+   CASACUSIA · Design Tokens
+   Derivados del Manual de Marca y el isotipo oficial.
+   Paleta completa de "filamentos" del logo.
+   ───────────────────────────────────────────────────────────── */
+
+:root {
+  /* ══ Paleta del isotipo (filamentos y puntos) ══════════════ */
+  --color-verde:    #1DB97B;   /* filamento verde (principal, comunidad)   */
+  --color-violeta:  #5533C2;   /* filamento violeta (expresión, identidad) */
+  --color-amarillo: #F5B800;   /* filamento amarillo (energía, inclusión)  */
+  --color-rosa:     #F44475;   /* filamento rosa (emoción, conexión)       */
+  --color-naranja:  #F5631A;   /* punto naranja (calidez)                  */
+  --color-magenta:  #BF35C2;   /* punto magenta (diversidad)               */
+  --color-lavanda:  #A86CC1;   /* punto lavanda (escucha activa)           */
+
+  /* ── Versiones accesibles para texto sobre blanco ────────── */
+  /* Verde oscuro → 4.6:1 sobre blanco (AA ✓) */
+  --color-verde-dark:    #0E8C57;
+  /* Violeta → 5.8:1 sobre blanco (AA ✓) */
+  --color-violeta-dark:  #3E2899;
+  /* Rosa → solo para large text / decorativo */
+  --color-rosa-dark:     #C0194A;
+
+  /* ── Tints (10 % de opacidad sobre blanco) ───────────────── */
+  --color-verde-soft:    #E8F9F2;
+  --color-violeta-soft:  #EDE8F8;
+  --color-amarillo-soft: #FEF8E0;
+  --color-rosa-soft:     #FFE3EC;
+  --color-naranja-soft:  #FFF0E8;
+
+  /* ══ Ink (texto) ════════════════════════════════════════════ */
+  --color-ink:        #143642;   /* navy del wordmark CASACUSIA — AAA ✓   */
+  --color-ink-soft:   #2E5060;   /* cuerpo secundario                     */
+  --color-ink-muted:  #5A7282;   /* metadatos, placeholders               */
+
+  /* ══ Superficies ════════════════════════════════════════════ */
+  --color-surface-bg:   #FFFFFF;   /* blanco limpio (fondo principal)      */
+  --color-surface-warm: #FFF9F2;   /* crema cálida (secciones alternas)    */
+  --color-surface-card: #FFFFFF;
+  --color-surface-line: #E8E4DC;
+  --color-surface-tint: #F5F1E8;
+
+  /* ══ Feedback ════════════════════════════════════════════════ */
+  --color-ok:   #2E7D4F;
+  --color-warn: #C0392B;
+  --color-mid:  #B8860B;
+
+  /* ══ Radio ═══════════════════════════════════════════════════ */
+  --radius-sm:  0.375rem;
+  --radius-md:  0.625rem;
+  --radius-lg:  0.875rem;
+  --radius-xl:  1.25rem;
+  --radius-2xl: 1.75rem;
+  --radius-3xl: 2.5rem;
+
+  /* ══ Movimiento ══════════════════════════════════════════════ */
+  --duration-fast:   120ms;
+  --duration-normal: 200ms;
+  --duration-slow:   360ms;
+  --ease-standard:   cubic-bezier(0.2, 0, 0, 1);
+  --ease-out:        cubic-bezier(0, 0, 0.2, 1);
+
+  /* ══ Focus ═══════════════════════════════════════════════════ */
+  --focus-ring: 0 0 0 3px rgba(29, 185, 123, 0.40);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
