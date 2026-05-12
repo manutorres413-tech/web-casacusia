@@ -90,14 +90,18 @@
     },
     "proximoEncuentro": {
       "eyebrow": "Join the next one",
-      "title": "Calendar of Activities",
-      "body": "Connect with the CASACUSIA community. Check the calendar, join the next in-person or virtual event and sign up directly from here.",
-      "cta": "View profile on Luma",
-      "banner": {
-        "eyebrow": "Next Meetup",
-        "title": "Want to join the next meetup?",
-        "body": "Join the CASACUSIA community at our next in-person event. Reserve your spot on Luma.",
-        "cta": "Join now"
+      "title": "Upcoming meetups",
+      "body": "In-person in Argentina and around the world, virtual so no one is left out, and special meetups for families. Sign up directly from here.",
+      "cta": "See all meetups",
+      "sinFecha": "More events coming soon",
+      "inscribite": "Sign up",
+      "filtros": {
+        "todos": "All",
+        "presencial": "In-person",
+        "virtual": "Virtual",
+        "familias": "Families",
+        "argentina": "Argentina",
+        "mundo": "Worldwide"
       }
     },
     "podcast": {

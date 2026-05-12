@@ -93,16 +93,18 @@
     },
     "proximoEncuentro": {
       "eyebrow": "Sumate al próximo",
-      "title": "Calendario de Actividades",
-      "body": "Conectate con la comunidad de CASACUSIA. Revisá el calendario, sumate al próximo evento presencial o virtual e inscribite directamente desde acá.",
-      "cta": "Ver perfil en Luma",
+      "title": "Próximos encuentros",
+      "body": "Presenciales en Argentina y el mundo, virtuales para que nadie quede afuera, y encuentros especiales para familias. Inscribite directo desde acá.",
+      "cta": "Ver todos los encuentros",
       "sinFecha": "Próximamente más eventos",
-      "inscripcionAbierta": "Inscripciones abiertas",
-      "banner": {
-        "eyebrow": "Próximo Encuentro",
-        "title": "¿Te querés sumar al próximo encuentro?",
-        "body": "Unite a la comunidad de CASACUSIA en nuestro próximo evento presencial. Reservá tu lugar en Luma.",
-        "cta": "Sumarme ahora"
+      "inscribite": "Inscribite",
+      "filtros": {
+        "todos": "Todos",
+        "presencial": "Presencial",
+        "virtual": "Virtual",
+        "familias": "Familias",
+        "argentina": "Argentina",
+        "mundo": "Mundo"
       }
     },
     "podcast": {

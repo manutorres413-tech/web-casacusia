@@ -6,6 +6,8 @@
 const LUMA_CALENDAR_SLUG = "hipoacusia";
 const LUMA_API_URL = `https://api.lu.ma/url?url=${LUMA_CALENDAR_SLUG}`;
 
+export type EventTag = "presencial" | "virtual" | "familias" | "argentina" | "mundo";
+
 export interface LumaEvent {
   id: string;
   title: string;
@@ -14,9 +16,11 @@ export interface LumaEvent {
   timezone: string;
   locationType: "offline" | "online";
   city: string | null;
+  country: string | null;
   address: string | null;
   coverUrl: string | null;
   lumaUrl: string;
+  tags: EventTag[];
 }
 
 interface LumaApiEvent {
@@ -31,6 +35,7 @@ interface LumaApiEvent {
   geo_address_info?: {
     city?: string;
     address?: string;
+    country_code?: string;
     localized?: {
       es?: {
         city?: string;
@@ -45,6 +50,30 @@ interface LumaApiFeaturedItem {
   start_at: string;
 }
 
+function deriveTags(e: LumaApiEvent): EventTag[] {
+  const tags: EventTag[] = [];
+  const nameUpper = e.name.toUpperCase();
+  const isVirtual = e.location_type !== "offline" || nameUpper.includes("VIRTUAL");
+  const countryCode = e.geo_address_info?.country_code ?? null;
+
+  if (isVirtual) {
+    tags.push("virtual");
+  } else {
+    tags.push("presencial");
+    if (countryCode === "AR") {
+      tags.push("argentina");
+    } else if (countryCode) {
+      tags.push("mundo");
+    }
+  }
+
+  if (nameUpper.includes("FAMILIA")) {
+    tags.push("familias");
+  }
+
+  return tags;
+}
+
 function parseEvent(item: LumaApiFeaturedItem): LumaEvent {
   const e = item.event;
   const localized = e.geo_address_info?.localized?.es;
@@ -57,18 +86,19 @@ function parseEvent(item: LumaApiFeaturedItem): LumaEvent {
     timezone: e.timezone,
     locationType: e.location_type === "offline" ? "offline" : "online",
     city: localized?.city ?? localized?.short_address ?? e.geo_address_info?.city ?? null,
+    country: e.geo_address_info?.country_code ?? null,
     address: e.geo_address_info?.address ?? null,
     coverUrl: e.cover_url,
     lumaUrl: `https://lu.ma/${e.url}`,
+    tags: deriveTags(e),
   };
 }
 
 /**
- * Fetches upcoming events from the Luma calendar.
- * Returns at most `limit` events that haven't ended yet, sorted by start date.
+ * Fetches ALL upcoming events from the Luma calendar, sorted by start date.
  * Uses Next.js revalidation (1 hour cache).
  */
-export async function getUpcomingEvents(limit = 3): Promise<LumaEvent[]> {
+export async function getUpcomingEvents(): Promise<LumaEvent[]> {
   try {
     const res = await fetch(LUMA_API_URL, {
       next: { revalidate: 3600 },
@@ -83,7 +113,6 @@ export async function getUpcomingEvents(limit = 3): Promise<LumaEvent[]> {
     return items
       .filter((item) => new Date(item.event.end_at) > now)
       .sort((a, b) => new Date(a.start_at).getTime() - new Date(b.start_at).getTime())
-      .slice(0, limit)
       .map(parseEvent);
   } catch {
     return [];
