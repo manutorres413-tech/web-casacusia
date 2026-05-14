@@ -133,6 +133,7 @@ const ImpactoSchema = z.object({
   ciudadesAlcanzadas: z.number(),
   padresEnRed: z.number(),
   episodiosPodcast: z.number(),
+  paisesAlcanzados: z.number().optional(),
   voluntariosActivos: z.number(),
   horasDonadasAnuales: z.number(),
   ultimaActualizacion: z.string()

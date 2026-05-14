@@ -3,12 +3,12 @@ import { getImpacto } from "@/lib/content";
 
 type Stat = { value: string; label: string; color: string };
 
-/* Color rotation per design system: púrpura, rosa, menta, ámbar, violeta */
 const statColors = [
-  "text-[#563AB3]",  // púrpura
-  "text-[#F44475]",  // rosa
   "text-[#00B980]",  // menta
+  "text-[#F44475]",  // rosa
   "text-[#FFC001]",  // ámbar
+  "text-[#563AB3]",  // púrpura
+  "text-[#00B980]",  // menta
   "text-[#C224B9]",  // violeta
 ];
 
@@ -22,6 +22,7 @@ export function ImpactStats() {
     { value: `${impacto.ciudadesAlcanzadas}`, label: t("items.ciudades"), color: statColors[2]! },
     { value: `${impacto.padresEnRed}+`, label: t("items.familias"), color: statColors[3]! },
     { value: `${impacto.episodiosPodcast}+`, label: t("items.episodios"), color: statColors[4]! },
+    { value: `${impacto.paisesAlcanzados ?? 61}`, label: t("items.paises"), color: statColors[5]! },
   ];
 
   return (
@@ -42,7 +43,7 @@ export function ImpactStats() {
           </h2>
         </div>
 
-        <dl className="grid grid-cols-2 md:grid-cols-5 gap-8 md:gap-6 text-center">
+        <dl className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-6 text-center">
           {stats.map((s) => (
             <div key={s.label} className="flex flex-col items-center gap-3">
               <dd className={`font-display text-5xl font-bold leading-none tracking-tight md:text-6xl ${s.color}`}>

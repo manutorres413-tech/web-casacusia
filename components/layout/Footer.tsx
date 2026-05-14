@@ -67,7 +67,6 @@ export function Footer() {
           <ul className="space-y-1 text-surface-bg/80 text-xs">
             <li>{site.legalName}</li>
             <li>CUIT: {site.legal.cuit}</li>
-            <li>{site.legal.personeria}</li>
             <li>{site.legal.arca}</li>
           </ul>
         </div>
