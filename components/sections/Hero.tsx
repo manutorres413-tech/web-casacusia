@@ -57,14 +57,14 @@ export function Hero() {
           isMoving ? "opacity-0 translate-y-2" : "opacity-100 translate-y-0"
         }`}
       >
-        <h1 className="font-display font-extrabold leading-[1.1] tracking-tight text-[#FFC001] text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
+        <h1 className="font-display font-extrabold leading-[1.1] tracking-tight text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
           {t("title")}
         </h1>
-        <p className="mt-3 font-display font-extrabold leading-[1.1] tracking-tight text-[#00B980] text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+        <p className="mt-3 font-display font-extrabold leading-[1.1] tracking-tight text-[#FFC001] text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
           {t("titleLine2")}
         </p>
 
-        <p className="mt-6 text-base leading-relaxed text-white/90 md:text-lg max-w-2xl mx-auto">
+        <p className="mt-6 text-base leading-relaxed text-[#FFF9F2] md:text-lg max-w-2xl mx-auto">
           {t("subtitle")}
         </p>
 

@@ -54,7 +54,14 @@ function deriveTags(e: LumaApiEvent): EventTag[] {
   const tags: EventTag[] = [];
   const nameUpper = e.name.toUpperCase();
   const isVirtual = e.location_type !== "offline" || nameUpper.includes("VIRTUAL");
-  const countryCode = e.geo_address_info?.country_code ?? null;
+  // Infer country from code, city name, or event title
+  let countryCode = e.geo_address_info?.country_code ?? null;
+  if (!countryCode) {
+    const city = (e.geo_address_info?.city ?? "").toLowerCase();
+    if (city.includes("buenos aires") || nameUpper.includes("CABA")) {
+      countryCode = "AR";
+    }
+  }
 
   if (isVirtual) {
     tags.push("virtual");
@@ -86,7 +93,8 @@ function parseEvent(item: LumaApiFeaturedItem): LumaEvent {
     timezone: e.timezone,
     locationType: e.location_type === "offline" ? "offline" : "online",
     city: localized?.city ?? localized?.short_address ?? e.geo_address_info?.city ?? null,
-    country: e.geo_address_info?.country_code ?? null,
+    country: e.geo_address_info?.country_code
+      ?? ((e.geo_address_info?.city ?? "").toLowerCase().includes("buenos aires") || e.name.toUpperCase().includes("CABA") ? "AR" : null),
     address: e.geo_address_info?.address ?? null,
     coverUrl: e.cover_url,
     lumaUrl: `https://lu.ma/${e.url}`,

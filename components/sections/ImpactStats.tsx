@@ -46,10 +46,10 @@ export function ImpactStats() {
         <dl className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-6 text-center">
           {stats.map((s) => (
             <div key={s.label} className="flex flex-col items-center gap-3">
-              <dd className={`font-display text-5xl font-bold leading-none tracking-tight md:text-6xl ${s.color}`}>
+              <dd className={`font-display text-5xl font-extrabold leading-none tracking-tight md:text-7xl drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] ${s.color}`}>
                 {s.value}
               </dd>
-              <dt className="text-sm font-medium text-[#FFF9F2]/70 leading-snug max-w-[140px]">
+              <dt className="text-sm font-semibold text-white/80 leading-snug max-w-[140px]">
                 {s.label}
               </dt>
             </div>
