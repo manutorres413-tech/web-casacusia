@@ -1,28 +1,70 @@
+"use client";
+
+import { useState, useMemo } from "react";
 import Image from "next/image";
-import { useTranslations } from "next-intl";
-import { Clock, Headphones, ArrowUpRight, Play } from "lucide-react";
+import { Clock, ArrowUpRight, Play, Youtube } from "lucide-react";
 
-import { Section, SectionHeading } from "@/components/ui/Section";
-import { Button } from "@/components/ui/Button";
+import { Section } from "@/components/ui/Section";
 import { Filamento } from "@/components/ui/Filamento";
-import { Link } from "@/lib/i18n/navigation";
-import { getEpisodios } from "@/lib/content";
+import type { Episodio } from "@/lib/content";
 
-const categoryStyles: Record<string, { gradient: string; accent: string; label: string }> = {
-  bienestar: { gradient: "from-verde/80 to-verde-dark/90", accent: "bg-verde", label: "text-verde-dark" },
-  salud:     { gradient: "from-violeta/80 to-violeta-dark/90", accent: "bg-violeta", label: "text-violeta-dark" },
-  historias: { gradient: "from-rosa/80 to-rosa-dark/90", accent: "bg-rosa", label: "text-rosa-dark" },
-  derechos:  { gradient: "from-amarillo/80 to-amarillo-dark/90", accent: "bg-amarillo", label: "text-amarillo-dark" },
-  default:   { gradient: "from-ink/70 to-ink/90", accent: "bg-verde", label: "text-verde-dark" },
-};
+type FilterKey = "ultimos" | "destacados" | "ninos" | "ciencia" | "historias";
+
+const EPISODES_PER_FILTER = 6;
+
+const filterConfig: { key: FilterKey; label: string }[] = [
+  { key: "ultimos", label: "Últimos" },
+  { key: "destacados", label: "Más escuchados" },
+  { key: "ninos", label: "Niños" },
+  { key: "ciencia", label: "Ciencia" },
+  { key: "historias", label: "Historias" },
+];
+
+const NINOS_KEYWORDS = /\b(niñ|hijo|hija|infant|pediátr|familia|mamá|madre|padre|papá|escuela|adolescen|chic|bebé|nacido|nació)\b/i;
+
+function matchesFilter(ep: Episodio, filter: FilterKey): boolean {
+  switch (filter) {
+    case "ultimos": return true;
+    case "destacados": return ep.destacado === true;
+    case "ninos": return NINOS_KEYWORDS.test(ep.titulo + " " + ep.descripcion);
+    case "ciencia": return ep.categoria === "salud" || ep.categoria === "tecnologia";
+    case "historias": return ep.categoria === "historias";
+  }
+}
 
 function getYoutubeThumbnail(youtubeId: string) {
   return `https://img.youtube.com/vi/${youtubeId}/mqdefault.jpg`;
 }
 
-export function PodcastDestacado() {
-  const t = useTranslations("home.podcast");
-  const episodios = getEpisodios({ limit: 6 });
+const categoryColors: Record<string, { accent: string; gradient: string }> = {
+  bienestar:  { accent: "bg-verde", gradient: "from-verde/80 to-verde-dark/90" },
+  salud:      { accent: "bg-violeta", gradient: "from-violeta/80 to-violeta-dark/90" },
+  historias:  { accent: "bg-rosa", gradient: "from-rosa/80 to-rosa-dark/90" },
+  tecnologia: { accent: "bg-amarillo", gradient: "from-amarillo/80 to-[#B8860B]/90" },
+  derechos:   { accent: "bg-[#563AB3]", gradient: "from-[#563AB3]/80 to-[#3E2899]/90" },
+  tips:       { accent: "bg-[#00B980]", gradient: "from-[#00B980]/80 to-[#0E8C57]/90" },
+  default:    { accent: "bg-ink", gradient: "from-ink/70 to-ink/90" },
+};
+
+interface Props {
+  episodios: Episodio[];
+}
+
+export function PodcastDestacado({ episodios }: Props) {
+  const [activeFilter, setActiveFilter] = useState<FilterKey>("ultimos");
+
+  const availableFilters = useMemo(() => {
+    return filterConfig.filter(({ key }) => {
+      if (key === "ultimos") return true;
+      return episodios.some((ep) => matchesFilter(ep, key));
+    });
+  }, [episodios]);
+
+  const filtered = useMemo(() => {
+    return episodios
+      .filter((ep) => matchesFilter(ep, activeFilter))
+      .slice(0, EPISODES_PER_FILTER);
+  }, [episodios, activeFilter]);
 
   return (
     <Section background="warm" ariaLabelledBy="podcast-title" className="relative overflow-hidden">
@@ -30,27 +72,57 @@ export function PodcastDestacado() {
       <Filamento name="morado" className="bottom-[-40px] left-[-40px] w-40 rotate-[-15deg]" opacity={10} />
 
       <div className="relative grid gap-10 lg:grid-cols-[1fr_340px] lg:items-start">
-
-        {/* Episodes */}
         <div>
-          <SectionHeading
-            eyebrow={t("eyebrow")}
-            title={<span id="podcast-title">{t("title")}</span>}
-            body={t("body")}
-          />
+          {/* Header */}
+          <div className="mb-8">
+            <p className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-[#F44475] mb-4">
+              Sordo pero no mudo
+            </p>
+            <h2 id="podcast-title" className="font-display text-4xl md:text-5xl font-bold tracking-tight text-[#143642]">
+              Nuestro podcast
+            </h2>
+            <p className="mt-4 text-lg text-[#4A6270] leading-relaxed max-w-xl">
+              Conversaciones, identificación y aprendizaje sobre hipoacusia. Escuchalo con transcripción completa.
+            </p>
+          </div>
 
+          {/* Filters */}
+          <div className="flex flex-wrap gap-2 mb-8" role="tablist" aria-label="Filtrar episodios">
+            {availableFilters.map(({ key, label }) => {
+              const isActive = activeFilter === key;
+              return (
+                <button
+                  key={key}
+                  role="tab"
+                  aria-selected={isActive}
+                  onClick={() => setActiveFilter(key)}
+                  className={`rounded-full px-4 py-2 text-sm font-semibold transition-all duration-200 ${
+                    isActive
+                      ? "bg-[#143642] text-white shadow-md"
+                      : "bg-[#E5DFD3] text-[#4A6270] hover:bg-[#143642]/10 hover:text-[#143642]"
+                  }`}
+                >
+                  {label}
+                </button>
+              );
+            })}
+          </div>
+
+          {/* Episode grid */}
           <ul className="grid gap-4 md:gap-5 sm:grid-cols-2">
-            {episodios.map((ep) => {
-              const style = categoryStyles[ep.categoria] ?? categoryStyles.default!;
+            {filtered.map((ep) => {
+              const colors = categoryColors[ep.categoria] ?? categoryColors.default!;
               const thumbnail = ep.youtubeId ? getYoutubeThumbnail(ep.youtubeId) : null;
+              const youtubeUrl = ep.youtubeId ? `https://www.youtube.com/watch?v=${ep.youtubeId}` : null;
 
               return (
                 <li key={ep.slug}>
-                  <Link
-                    href={`/podcast/${ep.slug}`}
-                    className="group flex h-full flex-col rounded-2xl bg-surface-card border border-surface-line overflow-hidden hover:shadow-card-hover transition-all hover:border-verde"
+                  <a
+                    href={youtubeUrl ?? "#"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex h-full flex-col rounded-2xl bg-white border border-[#E5DFD3] overflow-hidden hover:shadow-lg hover:border-[#00B980] transition-all"
                   >
-                    {/* Thumbnail */}
                     {thumbnail && (
                       <div className="relative aspect-video overflow-hidden">
                         <Image
@@ -60,49 +132,49 @@ export function PodcastDestacado() {
                           className="object-cover transition-transform duration-500 group-hover:scale-105"
                           sizes="(max-width: 640px) 100vw, 50vw"
                         />
-                        <div className={`absolute inset-0 bg-gradient-to-t ${style.gradient} opacity-0 group-hover:opacity-60 transition-opacity duration-300`} />
+                        <div className={`absolute inset-0 bg-gradient-to-t ${colors.gradient} opacity-0 group-hover:opacity-60 transition-opacity duration-300`} />
                         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                          <div className="h-12 w-12 rounded-full bg-white/90 flex items-center justify-center shadow-lg">
-                            <Play size={20} className="text-ink ml-0.5" fill="currentColor" />
+                          <div className="h-12 w-12 rounded-full bg-[#FF0000] flex items-center justify-center shadow-lg">
+                            <Play size={20} className="text-white ml-0.5" fill="currentColor" />
                           </div>
                         </div>
-                        {/* Episode number badge */}
-                        <div className={`absolute top-3 left-3 rounded-full px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white ${style.accent}`}>
+                        <div className={`absolute top-3 left-3 rounded-full px-2.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white ${colors.accent}`}>
                           Ep. {ep.numero}
+                        </div>
+                        {/* YouTube badge */}
+                        <div className="absolute top-3 right-3 rounded-full bg-black/60 backdrop-blur-sm px-2 py-0.5 flex items-center gap-1">
+                          <Youtube size={12} className="text-[#FF0000]" />
+                          <span className="text-[10px] font-semibold text-white">YouTube</span>
                         </div>
                       </div>
                     )}
 
                     <div className="flex flex-col flex-1 p-5">
-                      {!thumbnail && (
-                        <div className="flex items-center gap-2 mb-2">
-                          <span className={`h-2 w-2 rounded-full ${style.accent}`} aria-hidden />
-                          <p className={`text-[11px] font-bold uppercase tracking-wider ${style.label}`}>
-                            Ep. {ep.numero}
-                          </p>
-                        </div>
-                      )}
-                      <h3 className="font-display text-base font-semibold leading-snug text-ink group-hover:text-verde-dark transition-colors">
+                      <h3 className="font-display text-base font-semibold leading-snug text-[#143642] group-hover:text-[#0E8C57] transition-colors">
                         {ep.titulo}
                       </h3>
                       {ep.invitado && (
-                        <p className="mt-1 text-xs text-ink-muted">con {ep.invitado.nombre}</p>
+                        <p className="mt-1 text-xs text-[#7A8B95]">con {ep.invitado.nombre}</p>
                       )}
-                      <p className="mt-auto flex flex-wrap gap-x-3 gap-y-1 pt-4 text-[11px] text-ink-muted">
-                        <span className="inline-flex items-center gap-1"><Clock size={12} aria-hidden />{ep.duracion}</span>
-                        <span className="inline-flex items-center gap-1"><Headphones size={12} aria-hidden />transcripción</span>
+                      <p className="mt-auto flex flex-wrap gap-x-3 gap-y-1 pt-4 text-[11px] text-[#7A8B95]">
+                        <span className="inline-flex items-center gap-1"><Clock size={12} />{ep.duracion}</span>
                       </p>
                     </div>
-                  </Link>
+                  </a>
                 </li>
               );
             })}
           </ul>
 
           <div className="mt-8">
-            <Button href="/podcast" variant="secondary">
-              {t("cta")} <ArrowUpRight size={16} aria-hidden />
-            </Button>
+            <a
+              href="https://www.youtube.com/@hipoacusico"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-xl border-2 border-[#143642] bg-transparent px-6 py-3 text-sm font-bold text-[#143642] transition-all hover:bg-[#143642] hover:text-white"
+            >
+              Ver todos en YouTube <ArrowUpRight size={16} />
+            </a>
           </div>
         </div>
 
@@ -117,19 +189,19 @@ export function PodcastDestacado() {
               className="w-full object-cover"
             />
           </div>
-          <div className="mt-5 rounded-2xl bg-surface-card border border-surface-line p-5">
-            <p className="text-xs font-bold uppercase tracking-wider text-ink-muted">
+          <div className="mt-5 rounded-2xl bg-white border border-[#E5DFD3] p-5">
+            <p className="text-xs font-semibold uppercase tracking-wider text-[#7A8B95]">
               Escuchalo en
             </p>
             <div className="mt-3 flex flex-wrap gap-2">
-              <a href="https://open.spotify.com/show/6zYhA2pOjN0pxW2XcC8eM5" target="_blank" rel="noopener noreferrer" className="rounded-full border border-surface-line px-3 py-1 text-xs font-medium text-ink-soft hover:bg-[#1DB954] hover:text-white hover:border-[#1DB954] transition-colors">
+              <a href="https://www.youtube.com/@hipoacusico" target="_blank" rel="noopener noreferrer" className="rounded-full border border-[#E5DFD3] px-3 py-1.5 text-xs font-semibold text-[#143642] hover:bg-[#FF0000] hover:text-white hover:border-[#FF0000] transition-colors">
+                YouTube
+              </a>
+              <a href="https://open.spotify.com/show/6zYhA2pOjN0pxW2XcC8eM5" target="_blank" rel="noopener noreferrer" className="rounded-full border border-[#E5DFD3] px-3 py-1.5 text-xs font-medium text-[#4A6270] hover:bg-[#1DB954] hover:text-white hover:border-[#1DB954] transition-colors">
                 Spotify
               </a>
-              <a href="https://podcasts.apple.com/us/podcast/sordo-pero-no-mudo-hablando-desde-mi-hipoacusia/id1695485167" target="_blank" rel="noopener noreferrer" className="rounded-full border border-surface-line px-3 py-1 text-xs font-medium text-ink-soft hover:bg-[#872ec4] hover:text-white hover:border-[#872ec4] transition-colors">
+              <a href="https://podcasts.apple.com/us/podcast/sordo-pero-no-mudo-hablando-desde-mi-hipoacusia/id1695485167" target="_blank" rel="noopener noreferrer" className="rounded-full border border-[#E5DFD3] px-3 py-1.5 text-xs font-medium text-[#4A6270] hover:bg-[#872ec4] hover:text-white hover:border-[#872ec4] transition-colors">
                 Apple Podcasts
-              </a>
-              <a href="https://www.youtube.com/@hipoacusico" target="_blank" rel="noopener noreferrer" className="rounded-full border border-surface-line px-3 py-1 text-xs font-medium text-ink-soft hover:bg-[#FF0000] hover:text-white hover:border-[#FF0000] transition-colors">
-                YouTube
               </a>
             </div>
           </div>

@@ -13,6 +13,7 @@ import { Newsletter } from "@/components/sections/Newsletter";
 
 import { buildMetadata } from "@/lib/seo";
 import { getTranslations } from "next-intl/server";
+import { getEpisodios } from "@/lib/content";
 import type { Locale } from "@/lib/i18n/config";
 
 export async function generateMetadata({
@@ -38,6 +39,8 @@ export default async function HomePage({
   const { locale } = await params;
   setRequestLocale(locale);
 
+  const episodios = getEpisodios();
+
   return (
     <>
       <Hero />
@@ -45,7 +48,7 @@ export default async function HomePage({
       <ProximoEncuentro />
       <EjesYProgramas />
       <ImpactStats />
-      <PodcastDestacado />
+      <PodcastDestacado episodios={episodios} />
       <AllyGrid />
       <CuatroCaminos />
       <Newsletter />

@@ -42,7 +42,7 @@ export function Section({
 export function Eyebrow({ children, className }: { children: ReactNode; className?: string }) {
   return (
     <p className={cn(
-      "text-sm font-bold uppercase tracking-[0.15em] text-verde-dark",
+      "text-sm font-semibold uppercase tracking-[0.2em] text-[#F44475]",
       className
     )}>
       {children}
