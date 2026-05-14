@@ -25,7 +25,7 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 bg-surface-bg/90 backdrop-blur-md border-b border-surface-line">
+    <header className="sticky top-0 z-40 bg-surface-bg border-b border-surface-line shadow-sm">
       <div className="container flex h-16 items-center gap-4 md:h-[4.5rem]">
 
         {/* Logo real (PNG) */}

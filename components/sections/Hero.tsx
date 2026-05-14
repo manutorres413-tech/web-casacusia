@@ -22,34 +22,37 @@ export function Hero() {
         quality={85}
       />
 
-      {/* Overlay: oscuro por defecto, se aclara en hover para revelar la foto */}
-      <div className="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/75 to-ink/50 transition-opacity duration-700 group-hover/hero:opacity-40" />
+      {/* Overlay oscuro global */}
+      <div className="absolute inset-0 bg-black/50 transition-opacity duration-700 group-hover/hero:bg-black/20" />
 
-      {/* Contenido: visible por defecto, se desvanece en hover */}
+      {/* Contenido con panel blur para legibilidad */}
       <div className="container relative z-10 py-20 md:py-28 transition-opacity duration-700 group-hover/hero:opacity-0">
         <div className="max-w-2xl">
-          <h1 className="font-display text-5xl font-extrabold leading-[1.02] tracking-tight text-white sm:text-6xl md:text-[4rem] lg:text-[4.5rem]">
-            {t("title")}
-            <span className="mt-2 block text-verde">{t("titleLine2")}</span>
-          </h1>
+          {/* Panel con blur detrás del texto */}
+          <div className="rounded-3xl bg-black/40 backdrop-blur-md p-8 md:p-10 ring-1 ring-white/10">
+            <h1 className="font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-5xl md:text-6xl lg:text-[4.2rem]">
+              {t("title")}
+              <span className="mt-2 block text-verde">{t("titleLine2")}</span>
+            </h1>
 
-          <p className="mt-6 text-lg leading-relaxed text-white/85 md:text-xl max-w-lg">
-            {t("subtitle")}
-          </p>
+            <p className="mt-5 text-base leading-relaxed text-white/90 md:text-lg max-w-lg">
+              {t("subtitle")}
+            </p>
 
-          <div className="mt-10 flex flex-wrap gap-4">
-            <Button href="/sumate" size="lg">
-              {t("ctaPrimary")} <ArrowRight size={18} aria-hidden />
-            </Button>
-            <Button href="/programas" size="lg" variant="secondary" className="border-white/30 text-white hover:bg-white/10">
-              {t("ctaSecondary")}
-            </Button>
+            <div className="mt-8 flex flex-wrap gap-4">
+              <Button href="/sumate" size="lg">
+                {t("ctaPrimary")} <ArrowRight size={18} aria-hidden />
+              </Button>
+              <Button href="/programas" size="lg" variant="secondary" className="border-white/40 text-white hover:bg-white/15">
+                {t("ctaSecondary")}
+              </Button>
+            </div>
           </div>
         </div>
       </div>
 
-      {/* Hint en la esquina para invitar a hacer hover */}
-      <div className="absolute bottom-6 right-6 z-10 text-white/40 text-xs font-medium tracking-wider uppercase transition-opacity duration-700 group-hover/hero:opacity-0 hidden md:block">
+      {/* Hint */}
+      <div className="absolute bottom-6 right-6 z-10 text-white/50 text-xs font-medium tracking-wider uppercase transition-opacity duration-700 group-hover/hero:opacity-0 hidden md:block">
         hover para ver la foto →
       </div>
     </section>
