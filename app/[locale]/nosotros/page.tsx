@@ -50,11 +50,11 @@ export default async function NosotrosPage({ params }: { params: Promise<{ local
             { key: "argentina", bg: "bg-verde/10", text: "text-verde-dark" },
             { key: "oms", bg: "bg-violeta/10", text: "text-violeta-dark" }
           ].map((it) => (
-            <li key={it.key} className={`rounded-3xl p-8 border border-surface-line transition-transform hover:-translate-y-1 ${it.bg}`}>
-              <p className={`font-display text-4xl md:text-5xl font-extrabold ${it.text}`}>
+            <li key={it.key} className={`rounded-[2rem] p-8 transition-transform hover:-translate-y-1 ${it.bg}`}>
+              <p className={`font-display text-3xl md:text-4xl font-extrabold leading-tight ${it.text}`}>
                 {t(`stats.items.${it.key}.n`)}
               </p>
-              <p className="mt-4 text-ink-soft text-lg font-medium">
+              <p className="mt-3 text-ink-soft text-base">
                 {t(`stats.items.${it.key}.l`)}
               </p>
             </li>
@@ -100,14 +100,10 @@ export default async function NosotrosPage({ params }: { params: Promise<{ local
                 <Target size={24} aria-hidden />
               </div>
               <h3 className="text-sm uppercase tracking-widest font-bold text-white/80 mb-4">{t("horizonte.mision.label")}</h3>
-              <div className="space-y-4">
-                <p className="font-display text-2xl md:text-3xl leading-tight font-bold drop-shadow-sm">
-                  {t("horizonte.mision.title")}
-                </p>
-                <p className="text-lg text-white/90 leading-relaxed font-medium">
-                  {t("horizonte.mision.body")}
-                </p>
-              </div>
+              <p className="font-display text-2xl md:text-3xl leading-tight drop-shadow-sm">
+                <strong className="font-bold">Transformar</strong>{" "}
+                <span className="font-normal">la relación de las personas con su pérdida auditiva, para mejorar su calidad de vida.</span>
+              </p>
             </div>
           </div>
           {/* Visión */}
@@ -144,8 +140,8 @@ export default async function NosotrosPage({ params }: { params: Promise<{ local
             { key: "pureza", icon: <Sparkles size={20} />, color: "text-ink" },
             { key: "innovacion", icon: <Lightbulb size={20} />, color: "text-verde" }
           ].map((v) => (
-            <li key={v.key} className="group rounded-3xl bg-surface-card border border-surface-line p-6 hover:shadow-card-hover hover:-translate-y-1 transition-all duration-300">
-              <div className={`mb-4 w-12 h-12 rounded-full bg-surface-tint flex items-center justify-center ${v.color}`}>
+            <li key={v.key} className="group rounded-[2rem] p-6 hover:-translate-y-1 transition-all duration-300">
+              <div className={`mb-4 w-12 h-12 rounded-full bg-surface-warm flex items-center justify-center ${v.color}`}>
                 {v.icon}
               </div>
               <h3 className="font-display text-xl font-bold text-ink">{t(`valores.items.${v.key}.name`)}</h3>

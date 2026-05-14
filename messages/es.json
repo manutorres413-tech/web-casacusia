@@ -208,8 +208,8 @@
         "title": "¿Qué es la hipoacusia?",
         "body": "La hipoacusia es la disminución total o parcial de la capacidad auditiva. Puede ser unilateral o bilateral; leve, moderada, severa o profunda. La OMS la clasifica como una discapacidad invisible.",
         "items": {
-          "world": { "n": "1 de cada 20", "l": "Personas en el mundo tiene algún grado de pérdida auditiva." },
-          "argentina": { "n": "+2 millones", "l": "Personas en Argentina tienen hipoacusia." },
+          "world": { "n": "1 de cada 20 personas", "l": "en el mundo tiene algún grado de pérdida auditiva." },
+          "argentina": { "n": "+2 millones de personas", "l": "en Argentina tienen hipoacusia." },
           "oms": { "n": "700M", "l": "Proyección OMS hacia 2050 con hipoacusia discapacitante." }
         }
       },
@@ -224,7 +224,7 @@
         "mision": {
           "label": "Misión",
           "title": "Transformar la relación de las personas con su pérdida auditiva, para mejorar su calidad de vida.",
-          "body": "Entendemos a la relación con la hipoacusia como la forma de ver nuestro mazo de cartas."
+          "body": ""
         },
         "vision": {
           "label": "Visión",
