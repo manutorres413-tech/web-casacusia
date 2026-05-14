@@ -74,7 +74,7 @@ export function EjesYProgramas() {
           return (
             <div 
               key={p.slug}
-              className="group flex flex-col bg-white rounded-[2rem] overflow-hidden border border-surface-line hover:border-verde hover:shadow-2xl hover:shadow-verde/10 transition-all duration-500"
+              className="group flex flex-col bg-white rounded-[2rem] overflow-hidden shadow-md hover:shadow-2xl hover:shadow-verde/10 hover:-translate-y-1 transition-all duration-500"
             >
               {/* Imagen Superior */}
               <div className="relative h-56 w-full overflow-hidden">
@@ -87,7 +87,7 @@ export function EjesYProgramas() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 
                 {/* Icon Overlay */}
-                <div className="absolute bottom-4 left-6 inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white/20 backdrop-blur-md border border-white/30 text-white shadow-sm">
+                <div className="absolute bottom-4 left-6 inline-flex h-12 w-12 items-center justify-center rounded-full bg-white/20 backdrop-blur-md text-white shadow-lg">
                   {assets.icon}
                 </div>
               </div>
@@ -107,7 +107,7 @@ export function EjesYProgramas() {
                       href={p.cta.href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center gap-2 font-bold text-white bg-ink hover:bg-ink-soft transition-colors w-full py-3 rounded-xl"
+                      className="inline-flex items-center justify-center gap-2 font-bold text-white bg-ink hover:bg-ink-soft transition-colors w-full py-3 rounded-full"
                     >
                       {ctaLabel}
                       <ArrowRight size={18} />
@@ -115,7 +115,7 @@ export function EjesYProgramas() {
                   ) : (
                     <Link
                       href={p.cta.href}
-                      className="inline-flex items-center justify-center gap-2 font-bold text-white bg-ink hover:bg-ink-soft transition-colors w-full py-3 rounded-xl"
+                      className="inline-flex items-center justify-center gap-2 font-bold text-white bg-ink hover:bg-ink-soft transition-colors w-full py-3 rounded-full"
                     >
                       {ctaLabel}
                       <ArrowRight size={18} />

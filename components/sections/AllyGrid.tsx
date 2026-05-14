@@ -67,7 +67,7 @@ function AliadoCard({ aliado, size = "default", aporteLabel }: { aliado: Aliado;
   const colSpan = size === "large" ? "md:col-span-2 lg:col-span-3" : "";
   const content = (
       <div
-        className="flex items-center justify-center aspect-[3/2] rounded-xl bg-surface-card border border-surface-line p-4 hover:border-verde hover:shadow-card-hover transition-all duration-300"
+        className="flex items-center justify-center aspect-[3/2] rounded-[1.5rem] bg-white p-4 shadow-sm hover:shadow-lg transition-all duration-300"
         aria-label={`${aliado.nombre} · ${aliado.sector}`}
       >
         <Image

@@ -72,9 +72,9 @@ export function CuatroCaminos() {
             <Link
               href={c.href}
               className={[
-                "group relative flex flex-col overflow-hidden rounded-3xl bg-surface-card border-2",
-                "shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300",
-                c.accentBorder
+                "group relative flex flex-col overflow-hidden rounded-[2rem] bg-white",
+                "shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300",
+                ""
               ].join(" ")}
             >
               {/* Foto del encuentro */}
@@ -95,7 +95,7 @@ export function CuatroCaminos() {
 
               {/* Contenido */}
               <div className="flex flex-1 flex-col p-6 md:p-8">
-                <div className={`inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-white shadow-sm ring-1 ring-black/5 ${c.accentText} -mt-12 relative z-10`}>
+                <div className={`inline-flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md ${c.accentText} -mt-12 relative z-10`}>
                   {c.icon}
                 </div>
                 <h3 className="mt-4 font-display text-xl md:text-2xl font-bold text-ink">

@@ -121,7 +121,7 @@ export function PodcastDestacado({ episodios }: Props) {
                     href={youtubeUrl ?? "#"}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex h-full flex-col rounded-2xl bg-white border border-[#E5DFD3] overflow-hidden hover:shadow-lg hover:border-[#00B980] transition-all"
+                    className="group flex h-full flex-col rounded-[1.5rem] bg-white overflow-hidden shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all"
                   >
                     {thumbnail && (
                       <div className="relative aspect-video overflow-hidden">
@@ -189,18 +189,18 @@ export function PodcastDestacado({ episodios }: Props) {
               className="w-full object-cover"
             />
           </div>
-          <div className="mt-5 rounded-2xl bg-white border border-[#E5DFD3] p-5">
+          <div className="mt-5 rounded-[1.5rem] bg-white shadow-sm p-5">
             <p className="text-xs font-semibold uppercase tracking-wider text-[#7A8B95]">
               Escuchalo en
             </p>
             <div className="mt-3 flex flex-wrap gap-2">
-              <a href="https://www.youtube.com/@hipoacusico" target="_blank" rel="noopener noreferrer" className="rounded-full border border-[#E5DFD3] px-3 py-1.5 text-xs font-semibold text-[#143642] hover:bg-[#FF0000] hover:text-white hover:border-[#FF0000] transition-colors">
+              <a href="https://www.youtube.com/@hipoacusico" target="_blank" rel="noopener noreferrer" className="rounded-full bg-[#F4ECE0] px-3 py-1.5 text-xs font-semibold text-[#143642] hover:bg-[#FF0000] hover:text-white hover:border-[#FF0000] transition-colors">
                 YouTube
               </a>
-              <a href="https://open.spotify.com/show/6zYhA2pOjN0pxW2XcC8eM5" target="_blank" rel="noopener noreferrer" className="rounded-full border border-[#E5DFD3] px-3 py-1.5 text-xs font-medium text-[#4A6270] hover:bg-[#1DB954] hover:text-white hover:border-[#1DB954] transition-colors">
+              <a href="https://open.spotify.com/show/6zYhA2pOjN0pxW2XcC8eM5" target="_blank" rel="noopener noreferrer" className="rounded-full bg-[#F4ECE0] px-3 py-1.5 text-xs font-medium text-[#4A6270] hover:bg-[#1DB954] hover:text-white hover:border-[#1DB954] transition-colors">
                 Spotify
               </a>
-              <a href="https://podcasts.apple.com/us/podcast/sordo-pero-no-mudo-hablando-desde-mi-hipoacusia/id1695485167" target="_blank" rel="noopener noreferrer" className="rounded-full border border-[#E5DFD3] px-3 py-1.5 text-xs font-medium text-[#4A6270] hover:bg-[#872ec4] hover:text-white hover:border-[#872ec4] transition-colors">
+              <a href="https://podcasts.apple.com/us/podcast/sordo-pero-no-mudo-hablando-desde-mi-hipoacusia/id1695485167" target="_blank" rel="noopener noreferrer" className="rounded-full bg-[#F4ECE0] px-3 py-1.5 text-xs font-medium text-[#4A6270] hover:bg-[#872ec4] hover:text-white hover:border-[#872ec4] transition-colors">
                 Apple Podcasts
               </a>
             </div>
