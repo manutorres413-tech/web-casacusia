@@ -19,10 +19,9 @@ export function ImpactStats() {
   const stats: Stat[] = [
     { value: `${impacto.participantesTotales}+`, label: t("items.participantes"), color: statColors[0]! },
     { value: `${impacto.encuentrosRealizados}+`, label: t("items.encuentros"), color: statColors[1]! },
-    { value: `${impacto.ciudadesAlcanzadas}`, label: t("items.ciudades"), color: statColors[2]! },
-    { value: `${impacto.padresEnRed}+`, label: t("items.familias"), color: statColors[3]! },
-    { value: `${impacto.episodiosPodcast}+`, label: t("items.episodios"), color: statColors[4]! },
-    { value: `${impacto.paisesAlcanzados ?? 61}`, label: t("items.paises"), color: statColors[5]! },
+    { value: `${impacto.padresEnRed}+`, label: t("items.familias"), color: statColors[2]! },
+    { value: `${impacto.episodiosPodcast}+`, label: t("items.episodios"), color: statColors[3]! },
+    { value: `${impacto.paisesAlcanzados ?? 61}`, label: t("items.paises"), color: statColors[4]! },
   ];
 
   return (
@@ -43,7 +42,7 @@ export function ImpactStats() {
           </h2>
         </div>
 
-        <dl className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 md:gap-6 text-center">
+        <dl className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-6 text-center">
           {stats.map((s) => (
             <div key={s.label} className="flex flex-col items-center gap-3">
               <dd className={`font-display text-5xl font-extrabold leading-none tracking-tight md:text-7xl drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] ${s.color}`}>

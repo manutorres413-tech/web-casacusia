@@ -48,7 +48,7 @@ export function EjesYProgramas() {
   return (
     <Section background="tint" ariaLabelledBy="ejes-title" className="pt-24 pb-32">
       <div className="max-w-3xl mx-auto text-center mb-16">
-        <p className="font-display text-sm font-bold uppercase tracking-[0.2em] text-verde mb-4">
+        <p className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-[#F44475] mb-4">
           {t("eyebrow")}
         </p>
         <h2 id="ejes-title" className="font-display text-4xl md:text-5xl font-extrabold tracking-tight text-ink">
