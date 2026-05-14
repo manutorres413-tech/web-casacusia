@@ -72,7 +72,7 @@ export function CuatroCaminos() {
             <Link
               href={c.href}
               className={[
-                "group relative flex flex-col overflow-hidden rounded-[2rem] bg-white",
+                "group relative flex flex-col overflow-hidden rounded-3xl bg-white",
                 "shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300",
                 ""
               ].join(" ")}

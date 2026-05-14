@@ -34,7 +34,7 @@ export function Hero() {
 
   return (
     <section
-      className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-[#143642]"
+      className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-ink"
       aria-label="CASACUSIA: bienvenida"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
@@ -60,11 +60,11 @@ export function Hero() {
         <h1 className="font-display font-extrabold leading-[1.1] tracking-tight text-white text-4xl sm:text-5xl md:text-6xl lg:text-7xl">
           {t("title")}
         </h1>
-        <p className="mt-3 font-display font-extrabold leading-[1.1] tracking-tight text-[#FFC001] text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+        <p className="mt-3 font-display font-extrabold leading-[1.1] tracking-tight text-amarillo text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
           {t("titleLine2")}
         </p>
 
-        <p className="mt-6 text-base leading-relaxed text-[#FFF9F2] md:text-lg max-w-2xl mx-auto">
+        <p className="mt-6 text-base leading-relaxed text-surface-warm md:text-lg max-w-2xl mx-auto">
           {t("subtitle")}
         </p>
 

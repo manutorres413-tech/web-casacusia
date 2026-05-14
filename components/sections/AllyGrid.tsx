@@ -114,7 +114,7 @@ function AliadoCard({ aliado, size, aporteLabel }: { aliado: Aliado; size: "spon
 
   const content = (
     <div
-      className={`group relative flex items-center justify-center aspect-[3/2] rounded-[1.5rem] bg-white p-4 shadow-sm hover:shadow-lg transition-all duration-300 ${width}`}
+      className={`group relative flex items-center justify-center aspect-[3/2] rounded-2xl bg-white p-4 shadow-sm hover:shadow-lg transition-all duration-300 ${width}`}
       aria-label={`${aliado.nombre} · ${aliado.sector}`}
     >
       <Image

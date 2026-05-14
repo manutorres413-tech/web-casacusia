@@ -50,7 +50,7 @@ export default async function NosotrosPage({ params }: { params: Promise<{ local
             { key: "argentina", bg: "bg-verde/10", text: "text-verde-dark" },
             { key: "oms", bg: "bg-violeta/10", text: "text-violeta-dark" }
           ].map((it) => (
-            <li key={it.key} className={`rounded-[2rem] p-8 transition-transform hover:-translate-y-1 ${it.bg}`}>
+            <li key={it.key} className={`rounded-3xl p-8 transition-transform hover:-translate-y-1 ${it.bg}`}>
               <p className={`font-display text-3xl md:text-4xl font-extrabold leading-tight ${it.text}`}>
                 {t(`stats.items.${it.key}.n`)}
               </p>
@@ -140,7 +140,7 @@ export default async function NosotrosPage({ params }: { params: Promise<{ local
             { key: "pureza", icon: <Sparkles size={20} />, color: "text-ink" },
             { key: "innovacion", icon: <Lightbulb size={20} />, color: "text-verde" }
           ].map((v) => (
-            <li key={v.key} className="group rounded-[2rem] p-6 hover:-translate-y-1 transition-all duration-300">
+            <li key={v.key} className="group rounded-3xl p-6 hover:-translate-y-1 transition-all duration-300">
               <div className={`mb-4 w-12 h-12 rounded-full bg-surface-warm flex items-center justify-center ${v.color}`}>
                 {v.icon}
               </div>

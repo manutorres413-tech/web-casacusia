@@ -4,12 +4,11 @@ import { getImpacto } from "@/lib/content";
 type Stat = { value: string; label: string; color: string };
 
 const statColors = [
-  "text-[#00B980]",  // menta
-  "text-[#F44475]",  // rosa
-  "text-[#FFC001]",  // ámbar
-  "text-[#563AB3]",  // púrpura
-  "text-[#00B980]",  // menta
-  "text-[#C224B9]",  // violeta
+  "text-verde",
+  "text-rosa",
+  "text-amarillo",
+  "text-violeta",
+  "text-verde",
 ];
 
 export function ImpactStats() {
@@ -26,12 +25,12 @@ export function ImpactStats() {
 
   return (
     <section
-      className="relative overflow-hidden bg-[#143642] py-20 md:py-28"
+      className="relative overflow-hidden bg-ink py-20 md:py-28"
       aria-labelledby="impact-title"
     >
       <div className="container relative">
         <div className="mb-12 md:mb-16 text-center">
-          <p className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-[#F44475]">
+          <p className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-rosa">
             {t("eyebrow")}
           </p>
           <h2
@@ -45,7 +44,7 @@ export function ImpactStats() {
         <dl className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 md:gap-6 text-center">
           {stats.map((s) => (
             <div key={s.label} className="flex flex-col items-center gap-3">
-              <dd className={`font-display text-5xl font-extrabold leading-none tracking-tight md:text-7xl drop-shadow-[0_0_20px_rgba(255,255,255,0.15)] ${s.color}`}>
+              <dd className={`font-display text-5xl font-extrabold leading-none tracking-tight md:text-7xl ${s.color}`}>
                 {s.value}
               </dd>
               <dt className="text-sm font-semibold text-white/80 leading-snug max-w-[140px]">

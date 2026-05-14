@@ -165,7 +165,7 @@ function EventCard({
       href={event.lumaUrl}
       target="_blank"
       rel="noopener noreferrer"
-      className="group relative flex flex-col rounded-[1.5rem] bg-white/10 backdrop-blur-sm p-5 md:p-6 transition-all duration-300 hover:bg-white/15 hover:scale-[1.02] hover:shadow-xl"
+      className="group relative flex flex-col rounded-2xl bg-white/10 backdrop-blur-sm p-5 md:p-6 transition-all duration-300 hover:bg-white/15 hover:scale-[1.02] hover:shadow-xl"
     >
       {/* Date badge */}
       <div className={`inline-flex items-center gap-2 self-start rounded-full px-3 py-1 text-xs font-bold uppercase tracking-wider ${colors.badge}`}>

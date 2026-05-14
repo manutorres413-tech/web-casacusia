@@ -19,13 +19,13 @@ export function Esencia() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Columna Izquierda: Texto */}
           <div className="max-w-xl z-10">
-            <p className="font-display text-xs md:text-sm font-semibold uppercase tracking-[0.2em] text-[#F44475] mb-4">
+            <p className="font-display text-xs md:text-sm font-semibold uppercase tracking-[0.2em] text-rosa mb-4">
               {t("eyebrow")}
             </p>
 
             <h2
               id="esencia-title"
-              className="font-bubbles text-6xl md:text-7xl lg:text-[5.5rem] font-bold leading-[1.1] text-white drop-shadow-sm"
+              className="font-display text-6xl md:text-7xl lg:text-[5.5rem] font-extrabold leading-[1.1] text-white"
             >
               {t("title")}
             </h2>
@@ -49,10 +49,10 @@ export function Esencia() {
           {/* Columna Derecha: Imagen */}
           <div className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] mt-10 lg:mt-0">
             {/* Elemento decorativo de fondo */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-brand-teal/20 to-verde/20 rounded-[2rem] transform translate-x-4 translate-y-4 -rotate-3" />
+            <div className="absolute inset-0 bg-gradient-to-tr from-brand-teal/20 to-verde/20 rounded-3xl transform translate-x-4 translate-y-4 -rotate-3" />
             
             {/* Contenedor principal de la imagen */}
-            <div className="relative w-full h-full rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl">
+            <div className="relative w-full h-full rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
               <Image
                 src="/fotos/propuestas/Casacusia_GZ-21.jpg"
                 alt="Comunidad Casacusia"
