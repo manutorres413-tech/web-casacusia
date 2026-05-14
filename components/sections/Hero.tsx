@@ -39,7 +39,7 @@ export function Hero() {
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
-      {/* Background photo — muy baja opacidad por defecto, 100% al mover */}
+      {/* Background photo */}
       <Image
         src="/fotos/propuestas/Casacusia_GZ-21.jpg"
         alt="Comunidad Casacusia reunida"
@@ -51,9 +51,9 @@ export function Hero() {
         quality={85}
       />
 
-      {/* Texto centrado, sin fondo, colores brillantes */}
+      {/* Texto — pointer-events-none para que el mouse pase a la sección */}
       <div
-        className={`relative z-10 w-full max-w-4xl mx-auto px-6 py-20 md:py-28 text-center transition-all duration-500 ${
+        className={`relative z-10 w-full max-w-4xl mx-auto px-6 py-20 md:py-28 text-center pointer-events-none transition-all duration-500 ${
           isMoving ? "opacity-0 translate-y-2" : "opacity-100 translate-y-0"
         }`}
       >
@@ -68,11 +68,12 @@ export function Hero() {
           {t("subtitle")}
         </p>
 
-        <div className="mt-8 flex flex-wrap justify-center gap-4">
+        {/* Botones — pointer-events-auto para que sigan siendo clickeables */}
+        <div className="mt-8 flex flex-wrap justify-center gap-4 pointer-events-auto">
           <Button href="/sumate" size="lg">
             {t("ctaPrimary")} <ArrowRight size={18} aria-hidden />
           </Button>
-          <Button href="/programas" size="lg" variant="secondary" className="border-white/40 text-white hover:bg-white/15">
+          <Button href="/calendario" size="lg" variant="secondary" className="border-white text-white hover:bg-white hover:text-[#143642]">
             {t("ctaSecondary")}
           </Button>
         </div>
