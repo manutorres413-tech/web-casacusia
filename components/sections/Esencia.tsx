@@ -19,7 +19,7 @@ export function Esencia() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Columna Izquierda: Texto */}
           <div className="max-w-xl z-10">
-            <p className="font-display text-xs md:text-sm font-bold uppercase tracking-[0.2em] text-verde mb-4">
+            <p className="font-display text-xs md:text-sm font-semibold uppercase tracking-[0.2em] text-[#F44475] mb-4">
               {t("eyebrow")}
             </p>
 

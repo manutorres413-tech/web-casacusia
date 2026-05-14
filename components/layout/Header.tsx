@@ -10,13 +10,13 @@ import { LangSwitcher } from "./LangSwitcher";
 import { cn } from "@/lib/utils/cn";
 
 const primaryNav = [
-  { href: "/nosotros",  key: "nosotros"  },
-  { href: "/programas", key: "programas" },
-  { href: "/podcast",   key: "podcast"   },
-  { href: "/aliados",   key: "aliados"   },
-  { href: "/impacto",   key: "impacto"   },
-  { href: "/sumate",    key: "sumate"    },
-  { href: "/contacto",  key: "contacto"  }
+  { href: "/nosotros",   key: "nosotros"   },
+  { href: "/programas",  key: "programas"  },
+  { href: "/calendario", key: "calendario" },
+  { href: "/podcast",    key: "podcast"    },
+  { href: "/aliados",    key: "aliados"    },
+  { href: "/sumate",     key: "sumate"     },
+  { href: "/contacto",   key: "contacto"   }
 ] as const;
 
 export function Header() {
