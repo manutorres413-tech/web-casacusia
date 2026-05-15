@@ -211,6 +211,15 @@
         "oms": { "n": "700M", "l": "WHO projection towards 2050 with disabling hearing loss." }
       }
     },
+    "manifiesto": {
+      "eyebrow": "Why we do what we do",
+      "title": "Living, not just surviving",
+      "lead": "We know the world isn't fair. But we also believe everyone deserves a full life. It's not about surviving — it's about living.",
+      "p1": "And to do that, we have to ask: ask for things to be repeated, ask to switch sides, ask people to make adaptations. Asking is hard. And sometimes it pushes us away from others.",
+      "p2": "By not asking and by not hearing —because not hearing means not being fully present— we start to isolate ourselves to avoid the frustration. We stop asking, and therefore, stop being there.",
+      "p3": "We drift from people, from partners, from friends. We give up sports, theater, family movies. We stop going out, we stop socializing. And life in isolation isn't the most beautiful life.",
+      "kicker": "That's why CASACUSIA exists: so that no one has to choose between hearing and being present."
+    },
     "brecha": {
       "eyebrow": "Why CASACUSIA exists",
       "title": "A need that was not being addressed",
@@ -227,6 +236,25 @@
       "vision": {
         "label": "Vision",
         "title": "To be an inspiring movement that accompanies and empowers people with hearing loss, promoting a more conscious and supportive society."
+      }
+    },
+    "ejes": {
+      "eyebrow": "How do we fulfill our mission?",
+      "title": "Our pillars of work",
+      "body": "Three paths that cross in every decision and project.",
+      "items": {
+        "comunidad": {
+          "title": "Build community",
+          "desc": "Spaces that inspire, empower and amplify people with hearing loss."
+        },
+        "herramientas": {
+          "title": "Provide a toolbox",
+          "desc": "Resources, content and practical guides to navigate hearing loss with clear information."
+        },
+        "sociedad": {
+          "title": "Foster a conscious society",
+          "desc": "Raise awareness and push a society more supportive of people living with hearing loss."
+        }
       }
     },
     "valores": {

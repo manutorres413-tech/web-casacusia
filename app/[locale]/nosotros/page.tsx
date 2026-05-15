@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { getTranslations, setRequestLocale } from "next-intl/server";
-import { Heart, Target, Lightbulb, Users, ShieldCheck, Sparkles, MessageSquare } from "lucide-react";
+import { Heart, Target, Lightbulb, Users, ShieldCheck, Sparkles, MessageSquare, HandHeart, BookOpen, Globe } from "lucide-react";
 
 import { Section, SectionHeading } from "@/components/ui/Section";
 import { PageHero } from "@/components/ui/PageHero";
@@ -60,6 +60,50 @@ export default async function NosotrosPage({ params }: { params: Promise<{ local
             </li>
           ))}
         </ul>
+      </Section>
+
+      {/* 2.5 Manifiesto — "Vivir, no sobrevivir" */}
+      <Section background="default" ariaLabelledBy="manifiesto-title" className="pt-24 pb-24">
+        <div className="max-w-3xl mx-auto">
+          <p className="font-display text-sm font-semibold uppercase tracking-[0.2em] text-rosa mb-4 text-center">
+            {t("manifiesto.eyebrow")}
+          </p>
+          <h2 id="manifiesto-title" className="font-display text-4xl md:text-5xl font-extrabold tracking-tight text-ink text-center mb-10">
+            {t("manifiesto.title")}
+          </h2>
+
+          {/* Manifiesto en cascada vertical */}
+          <ol className="relative border-l-2 border-amarillo/60 pl-8 space-y-10">
+            <li className="relative">
+              <span className="absolute -left-[42px] top-1.5 flex h-6 w-6 items-center justify-center rounded-full bg-amarillo text-ink text-xs font-bold shadow-md">1</span>
+              <p className="font-display text-xl md:text-2xl font-bold text-ink leading-snug">
+                {t("manifiesto.lead")}
+              </p>
+            </li>
+            <li className="relative">
+              <span className="absolute -left-[42px] top-1.5 flex h-6 w-6 items-center justify-center rounded-full bg-rosa text-white text-xs font-bold shadow-md">2</span>
+              <p className="text-lg md:text-xl text-ink-soft leading-relaxed">
+                {t("manifiesto.p1")}
+              </p>
+            </li>
+            <li className="relative">
+              <span className="absolute -left-[42px] top-1.5 flex h-6 w-6 items-center justify-center rounded-full bg-violeta text-white text-xs font-bold shadow-md">3</span>
+              <p className="text-lg md:text-xl text-ink-soft leading-relaxed">
+                {t("manifiesto.p2")}
+              </p>
+            </li>
+            <li className="relative">
+              <span className="absolute -left-[42px] top-1.5 flex h-6 w-6 items-center justify-center rounded-full bg-verde text-white text-xs font-bold shadow-md">4</span>
+              <p className="text-lg md:text-xl text-ink-soft leading-relaxed">
+                {t("manifiesto.p3")}
+              </p>
+            </li>
+          </ol>
+
+          <p className="mt-12 font-display text-2xl md:text-3xl font-extrabold tracking-tight text-ink leading-snug text-center">
+            {t("manifiesto.kicker")}
+          </p>
+        </div>
       </Section>
 
       {/* 3. La Brecha (Editorial Layout) */}
@@ -123,14 +167,49 @@ export default async function NosotrosPage({ params }: { params: Promise<{ local
         </div>
       </Section>
 
-      {/* 5. Valores (Grilla con íconos) */}
+      {/* 4.5 Ejes de trabajo */}
+      <Section background="default" ariaLabelledBy="ejes-title">
+        <SectionHeading
+          eyebrow={t("ejes.eyebrow")}
+          title={<span id="ejes-title">{t("ejes.title")}</span>}
+          body={t("ejes.body")}
+          className="mx-auto text-center"
+        />
+        <ul className="mt-12 grid gap-6 md:grid-cols-3 max-w-5xl mx-auto">
+          {[
+            { key: "comunidad",    icon: <HandHeart size={24} aria-hidden />, accent: "bg-rosa/10 text-rosa-dark",       border: "border-rosa/20" },
+            { key: "herramientas", icon: <BookOpen size={24} aria-hidden />,  accent: "bg-verde/10 text-verde-dark",     border: "border-verde/20" },
+            { key: "sociedad",     icon: <Globe size={24} aria-hidden />,     accent: "bg-violeta/10 text-violeta-dark", border: "border-violeta/20" }
+          ].map((e, i) => (
+            <li
+              key={e.key}
+              className={`relative rounded-3xl bg-white p-8 shadow-sm hover:shadow-md hover:-translate-y-1 transition-all duration-300 border ${e.border}`}
+            >
+              <span className="absolute top-6 right-6 font-display text-5xl font-extrabold text-ink/5 leading-none">
+                0{i + 1}
+              </span>
+              <div className={`relative inline-flex h-12 w-12 items-center justify-center rounded-2xl ${e.accent}`}>
+                {e.icon}
+              </div>
+              <h3 className="relative mt-5 font-display text-xl md:text-2xl font-bold text-ink leading-tight">
+                {t(`ejes.items.${e.key}.title`)}
+              </h3>
+              <p className="relative mt-3 text-ink-soft leading-relaxed">
+                {t(`ejes.items.${e.key}.desc`)}
+              </p>
+            </li>
+          ))}
+        </ul>
+      </Section>
+
+      {/* 5. Valores (Grilla centrada con íconos) */}
       <Section background="tint" ariaLabelledBy="valores-title">
         <SectionHeading
           title={<span id="valores-title">{t("valores.title")}</span>}
           body={t("valores.body")}
           className="mx-auto text-center"
         />
-        <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <ul className="mt-12 flex flex-wrap justify-center gap-6 max-w-5xl mx-auto">
           {[
             { key: "apoyo", icon: <Heart size={20} />, color: "text-rosa" },
             { key: "empatia", icon: <MessageSquare size={20} />, color: "text-violeta" },
@@ -140,7 +219,10 @@ export default async function NosotrosPage({ params }: { params: Promise<{ local
             { key: "pureza", icon: <Sparkles size={20} />, color: "text-ink" },
             { key: "innovacion", icon: <Lightbulb size={20} />, color: "text-verde" }
           ].map((v) => (
-            <li key={v.key} className="group rounded-3xl p-6 hover:-translate-y-1 transition-all duration-300">
+            <li
+              key={v.key}
+              className="group flex flex-col items-center text-center w-[260px] rounded-3xl p-6 hover:-translate-y-1 transition-all duration-300"
+            >
               <div className={`mb-4 w-12 h-12 rounded-full bg-surface-warm flex items-center justify-center ${v.color}`}>
                 {v.icon}
               </div>

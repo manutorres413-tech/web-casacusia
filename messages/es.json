@@ -214,6 +214,15 @@
           "oms": { "n": "700M", "l": "Proyección OMS hacia 2050 con hipoacusia discapacitante." }
         }
       },
+      "manifiesto": {
+        "eyebrow": "Por qué hacemos lo que hacemos",
+        "title": "Vivir, no sobrevivir",
+        "lead": "Entendemos que el mundo no es justo. Pero también creemos que todos nos merecemos una vida plena. No se trata de sobrevivir, se trata de vivir.",
+        "p1": "Para eso tenemos que pedir: que nos repitan lo que no escuchamos, que nos cambien de lado, que las personas hagan adaptaciones. Y pedir es difícil. A veces nos aleja de la gente.",
+        "p2": "Por no pedir y por no escuchar —porque al no escuchar dejamos de estar presentes— empezamos a aislarnos para no frustrarnos. Dejamos de preguntar, y por ende, de estar.",
+        "p3": "Nos alejamos de las personas, de las parejas, de los amigos. Dejamos los deportes, el teatro, el cine en familia. Dejamos de salir, de socializar. Y la vida aislados no es la más linda.",
+        "kicker": "Por eso existe CASACUSIA: para que nadie tenga que elegir entre escuchar y estar."
+      },
       "brecha": {
         "eyebrow": "Por qué existe CASACUSIA",
         "title": "Una necesidad que no se estaba atendiendo",
@@ -230,6 +239,25 @@
         "vision": {
           "label": "Visión",
           "title": "Ser un movimiento inspirador que acompañe y empodere a las personas con pérdida auditiva, promoviendo una sociedad más consciente y solidaria."
+        }
+      },
+      "ejes": {
+        "eyebrow": "¿Cómo cumplimos nuestra misión?",
+        "title": "Nuestros ejes de trabajo",
+        "body": "Tres caminos que se cruzan en cada decisión y proyecto.",
+        "items": {
+          "comunidad": {
+            "title": "Generar comunidad",
+            "desc": "Espacios que inspiren, potencien y empoderen a las personas con pérdida auditiva."
+          },
+          "herramientas": {
+            "title": "Brindar una caja de herramientas",
+            "desc": "Recursos, contenido y guías prácticas para transitar la hipoacusia con información clara."
+          },
+          "sociedad": {
+            "title": "Fomentar una sociedad consciente",
+            "desc": "Sensibilizar y empujar una sociedad más solidaria con quienes viven con pérdida auditiva."
+          }
         }
       },
       "valores": {
