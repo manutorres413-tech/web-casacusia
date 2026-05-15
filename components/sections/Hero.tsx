@@ -51,9 +51,8 @@ export function Hero() {
         quality={85}
       />
 
-      {/* Texto — pointer-events-none para que el mouse pase a la sección */}
       <div
-        className={`relative z-10 w-full max-w-4xl mx-auto px-6 py-20 md:py-28 text-center pointer-events-none transition-all duration-500 ${
+        className={`relative z-10 w-full max-w-4xl mx-auto px-6 py-20 md:py-28 text-center transition-all duration-500 ${
           isMoving ? "opacity-0 translate-y-2" : "opacity-100 translate-y-0"
         }`}
       >
@@ -68,8 +67,7 @@ export function Hero() {
           {t("subtitle")}
         </p>
 
-        {/* Botones — pointer-events-auto para que sigan siendo clickeables */}
-        <div className="mt-8 flex flex-wrap justify-center gap-4 pointer-events-auto">
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
           <Button href="/sumate" size="lg">
             {t("ctaPrimary")} <ArrowRight size={18} aria-hidden />
           </Button>
