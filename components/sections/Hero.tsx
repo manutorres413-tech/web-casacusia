@@ -79,6 +79,9 @@ export function Hero() {
         <p className="mt-3 font-display font-extrabold leading-[1.1] tracking-tight text-amarillo text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
           {t("titleLine2")}
         </p>
+        <p className="mt-1 font-display font-extrabold leading-[1.1] tracking-tight text-amarillo text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+          {t("titleLine3")}
+        </p>
 
         <p className="mt-6 text-base leading-relaxed text-surface-warm md:text-lg max-w-2xl mx-auto">
           {t("subtitle")}

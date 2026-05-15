@@ -30,7 +30,8 @@
     "hero": {
       "eyebrow": "Comunidad de personas con hipoacusia",
       "title": "No estás solo.",
-      "titleLine2": "1 de cada 20 personas tiene hipoacusia.",
+      "titleLine2": "1 de cada 20 personas",
+      "titleLine3": "tiene hipoacusia.",
       "subtitle": "CASACUSIA es una ONG que acompaña a personas con hipoacusia y a sus familias para que nadie transite la pérdida auditiva en soledad. Generamos comunidad, herramientas y una red que crece todos los días.",
       "ctaPrimary": "Sumate a la comunidad",
       "ctaSecondary": "Próximos encuentros",
@@ -463,25 +464,25 @@
       "encuentros": {
         "titulo": "Encuentros presenciales",
         "subtitulo": "Espacios de comunidad en persona",
-        "resumen": "Encuentros en CABA, Misiones, Mendoza, Bariloche, Córdoba, La Plata y Madrid. Para dejar de sentirse solo.",
+        "resumen": "Encuentros en distintas ciudades para conectar y conocer otras personas con hipoacusia.",
         "cta": "Próximos encuentros"
       },
       "encuentros-virtuales": {
         "titulo": "Encuentros virtuales",
         "subtitulo": "Conectate desde donde estés",
-        "resumen": "Encuentros online por Google Meet para toda la diáspora y el interior.",
+        "resumen": "Encuentros virtuales abiertos a todo el mundo, para conocer historias, compartir experiencias y evacuar dudas.",
         "cta": "Conocer más"
       },
       "red-padres-madres": {
         "titulo": "Red de familias",
         "subtitulo": "220+ familias que te entienden",
-        "resumen": "Espacio virtual gratuito para padres y madres de chicos con hipoacusia.",
+        "resumen": "El espacio de familias es para todo tipo de familiares (incluyendo abuelos, tíos, etc.).",
         "cta": "Sumarse a la red"
       },
       "podcast": {
         "titulo": "Sordo pero no mudo",
         "subtitulo": "El podcast de CASACUSIA",
-        "resumen": "60+ episodios con transcripción completa. Conversaciones, identificación y aprendizaje.",
+        "resumen": "70 episodios, con entrevistas a personas con hipoacusia y a profesionales de distintos temas.",
         "cta": "Escuchar episodios"
       },
       "charlas-corporativas": {

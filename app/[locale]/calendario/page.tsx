@@ -37,7 +37,6 @@ export default async function CalendarioPage({
   const events = await getUpcomingEvents();
 
   const translations = {
-    eyebrow: tFilters("eyebrow"),
     title: tFilters("title"),
     body: tFilters("body"),
     cta: tFilters("cta"),

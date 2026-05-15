@@ -30,7 +30,8 @@
     "hero": {
       "eyebrow": "Hearing loss community",
       "title": "You are not alone.",
-      "titleLine2": "1 in 20 people has hearing loss.",
+      "titleLine2": "1 in 20 people",
+      "titleLine3": "has hearing loss.",
       "subtitle": "CASACUSIA is an NGO that accompanies people with hearing loss and their families so that no one goes through it alone. We build community, tools, and a network that grows every day.",
       "ctaPrimary": "Join the community",
       "ctaSecondary": "Upcoming meetups",
@@ -460,25 +461,25 @@
       "encuentros": {
         "titulo": "In-person meetups",
         "subtitulo": "In-person community spaces",
-        "resumen": "Meetups in CABA, Misiones, Mendoza, Bariloche, Córdoba, La Plata and Madrid. To stop feeling alone.",
+        "resumen": "Meetups in different cities to connect with other people with hearing loss.",
         "cta": "Upcoming meetups"
       },
       "encuentros-virtuales": {
         "titulo": "Virtual meetups",
         "subtitulo": "Connect from wherever you are",
-        "resumen": "Online meetups via Google Meet for the entire diaspora and the interior.",
+        "resumen": "Virtual meetups open to the world, to hear stories, share experiences and ask questions.",
         "cta": "Learn more"
       },
       "red-padres-madres": {
         "titulo": "Families network",
         "subtitulo": "220+ families who understand you",
-        "resumen": "Free virtual space for parents of children with hearing loss.",
+        "resumen": "The families space is for any kind of relatives (including grandparents, aunts, uncles, etc.).",
         "cta": "Join the network"
       },
       "podcast": {
         "titulo": "Sordo pero no mudo",
         "subtitulo": "CASACUSIA's podcast",
-        "resumen": "60+ episodes with full transcription. Conversations, identification and learning.",
+        "resumen": "70 episodes, with interviews with people with hearing loss and professionals on various topics.",
         "cta": "Listen to episodes"
       },
       "charlas-corporativas": {
